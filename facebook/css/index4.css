@@ -23,20 +23,19 @@ body{
 }
 
 #contingut #cap{
-  height: 358px;
+  height: 401px;
   background-image: url(../img/nieve.jpg);
   background-repeat: no-repeat;
   background-color: white;
+  background-size: 853px 358px;
   margin-bottom: 43px;
-  box-shadow: 1px 0 1px #666666;
+  box-shadow: 1px 0px 1px #666666;
   border-radius: 3px;
 
 
 }
 #contingut #principal{
   background-color: white;
-  width: 322px;
-  height: 500px;
   margin-top: 60px;
   margin-left: 0;
   margin-bottom: 12px;
@@ -72,13 +71,14 @@ body{
   float:right;
   width: 647px;
   height: 43px;
-  background-color: #5066ae;
+  background-color: #ACB8C2;
   padding: 0;
   margin:0;
   position: relative;
   top: 109px;
-  box-shadow: 1px 1px 1px #666666;
   border-radius: 3px;
+  color: #5066ae;
+  font-size: bold 14px;
 
 }
 
@@ -92,4 +92,29 @@ li{
   background-color: white;
   line-height: 43px;
 
+}
+
+.izq{
+  height: 200px;
+  width: 322px;
+  border-radius: 3px;
+  box-shadow: 1px 1px 1px #666666;
+  float:left;
+  clear:left;
+}
+
+.der{
+  height: 100px;
+  width: 516px;
+  border-radius: 3px;
+  box-shadow: 1px 1px 1px #666666;
+  float:right;
+  margin-top: 12px;
+  background-color: white;
+
+}
+
+#mundo{
+margin: 0 15px;
+ float:left;
 }
