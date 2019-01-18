@@ -1,11 +1,13 @@
 body{
-  margin:0;
+  margin: 0 auto;
   padding:0;
   background-color: #e9ebed;
   font-family: 'LucidaGrande', Tahoma, Segou UI, San Francisco, Roboto;
   <!--(Typetiper)-->
 
 }
+
+
 #barra{
   height:43px;
   background-color: #5066ae;
@@ -14,6 +16,8 @@ body{
   left:0;
   right:0;
 }
+
+
 #contingut{
   margin: 0 auto;
   background-color: #e9ebed;
@@ -21,8 +25,8 @@ body{
   width: 852px;
   background-position: center;
   overflow: hidden;
-
 }
+
 
 #contingut #cap{
   height: 401px;
@@ -32,23 +36,21 @@ body{
   background-size: 853px 358px;
   box-shadow: 1px 0px 1px #666666;
   border-radius: 3px;
+  }
 
 
-}
 #contingut #principal{
   background-color: white;
   margin-left: 0;
+  margin-top:12px;
   margin-bottom: 12px;
   margin-right: 12px;
   box-shadow: 0px 0px 1px #666666;
   border-radius: 3px;
   overflow: hidden;
   font-size: 12px;
+}
 
-}
-h5{
-  font-size: 14px;
-}
 
 #cap img{
   left:21px;
@@ -59,7 +61,6 @@ h5{
   width: 170px;
   height: 170px;
   box-shadow: 2px 2px 2px #666666;
-
 }
 
 #cap h2{
@@ -68,8 +69,6 @@ h5{
   top: 70px;
   color: white;
   text-shadow: 2px 2px 2px #666666;
-
-
 }
 
 #contingut #menu{
@@ -85,7 +84,6 @@ h5{
   color: #5066ae;
   font-size: bold 14px;
   display: block;
-
 }
 
 #menu li{
@@ -97,10 +95,9 @@ h5{
   background-color: white;
   line-height: 43px;
 }
+
 #principal li{
-
   list-style-type: none;
-
 }
 
 #seccio{
@@ -109,12 +106,26 @@ h5{
   width: 298px;
 }
 
+#principal h5{
+  text-indent: 26px;
+  height: 24px;
+  font-size: 14px;
+  background-image: url(../img/mundo.png);
+  background-repeat: no-repeat;
+  background-position: 0 -0px;
+  background-color: ;
 
+}
+#principal p{
+  border-bottom: solid 1px #DDD;
+  box-shadow:0 1px 0 #DDD;
+  margin-left: 0;
+  padding: 0 0 10px 0;
+}
 
 .der{
   width: 512px;
   float:right;
-  margin-top: 12px;
   background-color: white;
   clear:right;
 }
@@ -123,11 +134,5 @@ h5{
 border-radius: 3px;
 box-shadow: 1px 1px 1px #666666;
 padding:12px;
-margin-top:12px;
 overflow: hidden;
-}
-
-#mundo{
-margin: 0 15px;
- float:left;
 }
