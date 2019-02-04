@@ -1,3 +1,4 @@
+
   <!DOCTYPE html>
   <html lang="en" dir="ltr">
     <meta charset="utf-8">
@@ -6,17 +7,18 @@
     <head>
       <meta charset="utf-8">
       <title>Facebook</title>
-      <link rel="stylesheet" type="text/css" href="css/index4.css"/>
+      <link rel="stylesheet" type="text/css" href="css/facebook.css"/media="screen">
+      <link rel="stylesheet" type="text/css" href="css/index4print.css"/media="print">
     </head>
 
     <body>
 
-      <div id="barra">Inici</div>
+      <div id="barra"></div>
 
       <div id="contenent">
 
         <div id="cap">
-          <img src="img/snow2.jpg">
+          <img src="img/mrobot.jpg">
           <h2 id="nom">Mariangeles Codispoto</h2>
 
           <ul id="menu">
@@ -26,14 +28,13 @@
             <li><a href="">Fotos</a></li>
             <li><a href="">Archivo</a></li>
             <li><a href="">Más</a></li>
-            <li><a href=""></a></li>
           </ul>
         </div>
 
           <aside id="seccio">
               <div id="presentacio" class="izq">
                     <h3>Presentación</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <p>Hakuna matata</p>
 
                     <ul>
                       <li class="study">Estudió en <a href="">Monasterio Budista</a></li>
@@ -47,15 +48,15 @@
               <div  id="fotos" class="izq">
                 <h3>Fotos</h3>
                 <ul>
-                  <li><a href="">Foto1</a></li>
-                  <li><a href="">Foto2</a></li>
-                  <li><a href="">Foto3</a></li>
-                  <li><a href="">Foto4</a></li>
-                  <li><a href="">Foto5</a></li>
-                  <li><a href="">Foto6</a></li>
-                  <li><a href="">Foto7</a></li>
-                  <li><a href="">Foto8</a></li>
-                  <li><a href="">Foto9</a></li>
+                  <li><img src="img/duck.jpeg"></li>
+                  <li><img src="img/less.jpg"></li>
+                  <li><img src="img/mapogo.jpg"></li>
+                  <li><img src="img/red.jpg"></li>
+                  <li><img src="img/FB.jpg"></li>
+                  <li><img src="img/snow.jpg"></li>
+                  <li><img src="img/friend.jpg"></li>
+                  <li><img src="img/face.png"></li>
+                  <li><img src="img/family.jpg"></li>
 
                 </ul>
               </div>
@@ -77,31 +78,100 @@
 
                   <div id="surprise" class="izq">
                     <h3>¿Lo sabías?</h3>
+                    <img src="img/icon/sabias.png">
+                    <form>
+                      <input type="text" placeholder="Si quieres decir algo, ¡Ahora o nunca!"></input>
+                    </form>
+                    <h5 id="le">Ahora no</h5>
+                    <h5 id="ri">Responder preguntas</h5>
                   </div>
-                  <div id="idioma" class="izq">
 
+                  <div id="idioma" class="izq">
+                    <i><a href="https://translate.google.es/?hl=es">Español</a></i>
+                    <i><a href="https://translate.google.es/?hl=es">Catalán</a></i>
+                    <i><a href="https://translate.google.es/?hl=es">Italiano</a></i>
+                    <i><a href="https://translate.google.es/?hl=es">Inglés</a></i>
                   </div>
             </aside>
 
                   <div id="post1" class="der">
-                    <form>
-                      <textarea>Escribe un comentario...</textarea>
+                    <ul id="crear">
+                        <li id="publica">Crear publicación</li>
+                        <li id="publica_foto">Foto/Bideo</li>
+                        <li id="publica_video">Bideo en directo</li>
+                        <li id="publica_noticia">Acontecimiento impottante</li>
+                    </ul>
+
+                    <form id="text1">
+                      <input type="text" placeholder="Escribe un comentario.."></input>
                     </form>
+
+                    <ul id="bot_estado">
+                        <li id="estado_fotovideo">Foto/Bideo</li>
+                        <li id="estado_etiqueta">Etiquetar a ..</li>
+                        <li id="estado_sentimi">Sentimiento ..</li>
+                        <li id="estado_mas">•••</li>
+                    </ul>
                   </div>
 
                   <div id="post2" class="der">
+                    <ul id="ajustes">
+                        <h4>Publicaciones</h4>
+                        <li id="admin">Administrar publicaciones</li>
+                        <li id="vista">Vista de lista</li>
+                        <li id="cuadro">Vista de cuadrícula</li>
+                    </ul>
+                  </div>
+
+                  <div id="post3" class="der">
+
+                    <h1 style="padding-left: 60px";>George R.R. Martin</h1>
+                    <img src="img/icon/flecha.png">
+                    <h1>Mariangeles Codispoto</h1>
+                    <h2 >30 Enero 2019</h2>
+                    <p>“Un lector vive mil vidas antes de morir. Aquel que nunca lee vive solo una”</p>
+
+                    <ul class="opinion">
+                      <li id="like">Like</li>
+                      <li id="comen">Comentar</li>
+                      <li id="to2to">Compartir</li>
+                      <li>•••</li>
+                    </ul>
+
+                    <iframe width="490" height="275" src="https://www.youtube.com/embed/bCHvAi88ksw" frameborder="0" allow="accelerometer; autoplay="1"; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  </div>
+
+                  <div id="post3" class="der">
+
+                    <h1 style="padding-left: 60px";>Albert Einstein</h1>
+                    <img src="img/icon/flecha.png">
+                    <h1>Mariangeles Codispoto</h1>
+                    <h2 >28 Enero 2019</h2>
+                    <p>“Cada día sabemos más y entendemos menos”</p>
+
+                    <ul class="opinion">
+                      <li id="like">Like</li>
+                      <li id="comen">Comentar</li>
+                      <li id="to2to">Compartir</li>
+                      <li>•••</li>
+                    </ul>
 
                   </div>
 
                   <div id="post3" class="der">
 
-                  </div>
+                    <h1 style="padding-left: 60px";>Giovanni Boccaccio</h1>
+                    <img src="img/icon/flecha.png">
+                    <h1>Mariangeles Codispoto</h1>
+                    <h2 >25 Enero 2019</h2>
+                    <p>“Vale más actuar exponiéndose a arrepentirse de ello, que arrepentirse de no haber hecho nada”</p>
 
-                  <div id="post4" class="der">
-
-                  </div>
-
-                  <div id="post5" class="der">
+                    <ul class="opinion">
+                      <li id="like">Like</li>
+                      <li id="comen">Comentar</li>
+                      <li id="to2to">Compartir</li>
+                      <li>•••</li>
+                    </ul>
 
                   </div>
 

@@ -1,0 +1,623 @@
+@media only screen and (min-width: 960px){
+body{
+  margin: 0;
+  padding: 0;
+  background-color: #e9ebed;
+  font-family: 'LucidaGrande', Tahoma, Segou UI, San Francisco, Roboto;
+
+
+}
+
+
+#barra{
+  height:43px;
+  background-color: #5066ae;
+  position:fixed;
+  top:0;
+  left:0;
+  right:0;
+  z-index:9000;
+}
+
+
+#contenent{
+  margin: auto;
+  width: 880px;
+  overflow: hidden;
+  background-color: #e9ebed;
+}
+
+
+li a{
+  text-decoration: none;
+  font-weight: bold;
+
+}
+
+
+#contenent #cap{
+  height: 408px;
+  background-image: url(../img/fsociety.jpg);
+  background-repeat: no-repeat;
+  background-color: white;
+  background-size: 880px 358px;
+  box-shadow: 1px 0px 1px #666666;
+  border-radius: 3px;
+  }
+
+
+#contenent #cap img{
+  left:21px;
+  top:200px;
+  border-radius: 50%;
+  border: solid white 4px;
+  position: relative;
+  width: 170px;
+  height: 170px;
+  box-shadow: 2px 2px 2px #666666;
+}
+
+
+#cap h2{
+  position: relative;
+  left: 230px;
+  top: 70px;
+  color: white;
+  text-shadow: 2px 2px 2px #666666;
+}
+
+
+#menu{
+  float:right;
+  width: 647px;
+  height: 43px;
+  background-color: #ACB8C2;
+  padding: 0;
+  margin:3px;
+  left:78px;
+  position: relative;
+  top: 109px;
+  font-size: bold 14px;
+  border-radius: 3px;
+}
+
+
+#menu li{
+  line-height: 43px;
+  float:left;
+  display: inline;
+  padding: 0 20px 0 20px;
+  background-color: white;
+  margin:0 1px;
+}
+
+
+#menu a{
+  color:#5067af;
+  text-decoration: none;
+  font-size:14px;
+}
+
+
+.izq{
+  width:321px;
+  float:left;
+  clear:left;
+  padding:12px;
+}
+
+.der{
+
+  width:517px;
+  float:right;
+  clear:right;
+}
+
+
+.izq, .der{
+  background-color: white;
+  border-radius: 3px;
+  border: solid 1px #ddd;
+  margin-top: 12px;
+}
+
+
+.der li{
+  text-decoration: none;
+  list-style-type: none;
+  float:left;
+
+}
+
+.izq li{
+
+display:block;
+float:left;
+line-height: 43px;
+text-decoration: none;
+list-style-type: none;
+}
+
+
+aside{
+  width: 322px;
+  float:left;
+}
+
+
+#presentacio, #amigos, #fotos, #surprise, #idioma{
+  font-size:12px;
+  overflow:hidden;
+}
+
+
+
+#presentacio p{
+  border-bottom: solid 1px #ddd;
+  box-shadow:0 1px 0 #ddd;
+  margin:12px;
+  padding-bottom:12px;
+  background-image:url(../img/icon/dedos.png);
+  background-repeat: no-repeat;
+  background-size:14px 18px;
+  text-indent:24px;
+  padding-left: 28px;
+  background-position: 28px 0px;
+
+}
+
+
+#presentacio .study{
+  background-image:url(../img/icon/study.png);
+  background-repeat: no-repeat;
+  background-size:16px 14px;
+  background-position: left;
+  padding: 0 20px 0 20px;
+}
+
+
+#presentacio .life{
+  background-image:url(../img/icon/life.png);
+  background-repeat: no-repeat;
+  background-size:14px 15px;
+  background-position: left;
+  padding: 0 20px 0 20px;
+}
+
+
+#presentacio .born{
+  background-image:url(../img/icon/born.png);
+  background-repeat: no-repeat;
+  background-size:12px 16px;
+  background-position: left;
+  padding: 0 20px 0 20px;
+}
+
+
+#amigos{
+}
+
+#fotos{
+}
+
+#surprise{
+}
+
+#surprise #le, #ri{
+  margin: 12px 30px 12px 30px;
+  display: inline-block;
+  color:grey;
+  font-size: 8pt;
+}
+
+#surprise #ri{
+  float: right;
+}
+
+#surprise #le{
+  float: left;
+}
+
+#surprise img{
+  top: 25px;
+  bottom: 50px;
+  padding-left:145px;
+}
+
+#idioma{
+  display: block;
+  text-indent: 73px;
+}
+
+#fotos ul{
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+
+#fotos img{
+  padding:0;
+  margin: 2.5px;
+  float: left;
+  list-style-type: none;
+  width: 101px;
+  height: 101px;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: 100%;
+
+}
+
+#amigos a{
+  color:white;
+}
+
+
+#amigos ul{
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+
+#amigos li{
+  padding:0;
+  margin: 2.5px;
+  float: left;
+  list-style-type: none;
+  width: 101px;
+  height: 101px;
+  position: relative;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  font-size: 14px;
+  text-align: justify;
+  line-height: 18px;
+
+
+}
+
+#SM{background-image: url(https://smarcer2019crn.github.io/M08/s2m8uf104_marcer/img/perfil_yo.jpg);
+}
+#SF{background-image: url(https://sfernandez2019crn.github.io/M08/s2m8uf104_fernandez/img/gos.png);
+}
+#AC{background-image: url(https://acarranco2019crn.github.io/m08/s2m8uf0104carranco/img/profile.jpg);
+}
+#PS{background-image: url(https://psanz2019crn.github.io/M08/s2m8uf104_sanz/img/aoperfil.gif);
+}
+#GB{background-image: url(https://gbonsoms2019crn.github.io/M08/s2m8uf104_facebook/img/bird.jpg);
+}
+#SG{background-image: url(https://sgarzon2019crn.github.io/M08/s2m8uf104_facebook/img/perfil.jpg);
+}
+#VH{background-image: url(https://vherrero2019crn.github.io/M08/s2m8uf104facebook/img/perfil.png);
+}
+#NP{background-image: url(https://iprados2019crn.github.io/M08/s2m8uf104_iprados/img/fotoperfil.jpg);
+}
+#MM{background-image: url(https://mmunozp2019crn.github.io/M08/s2m8uf104_munoz/img/logo.jpg);
+}
+
+
+#seccio h2{
+  text-indent:24px;
+}
+
+
+#seccio h3{
+  background-image: url(../img/lateral.gif);
+  background-repeat: no-repeat;
+  background-size:24px;
+  text-indent:40px;
+  height: 24px;
+}
+
+
+#presentacio h3{
+ background-position: 0 0px;
+}
+
+
+#fotos h3{
+  background-position: 0 -24px;
+}
+
+
+#amigos h3{
+  background-position: 0 -48px;
+}
+
+
+#surprise h3{
+  background-position: 0 -72px;
+}
+
+
+#surprise h5:hover{
+  opacity: 0.5;
+}
+
+#idioma h3{
+  background-position: 0 -72px;
+}
+
+
+#crear{
+  height: 38px;
+
+  text-align: center;
+  background-color:#e9ebed;
+  font-size: 12px;
+  margin:0;
+  padding: 12px;
+}
+
+#crear li {
+  border-right: solid 1px grey;
+  padding-right:12px;
+
+}
+
+#publica{
+  background-image: url(../img/icon/lapiz.png);
+  background-repeat: no-repeat;
+  background-size:12px 12px;
+  text-indent:38px;
+  height: 18px;
+  background-position: 12px 0px;
+}
+
+#publica_foto{
+  background-image: url(../img/icon/foto.png);
+  background-repeat: no-repeat;
+  background-size:14px 12px;
+  text-indent:38px;
+  height: 18px;
+  background-position: 12px 0px;
+}
+
+
+#publica_video{
+  background-image: url(../img/icon/directo.png);
+  background-repeat: no-repeat;
+  background-size:16px 14px;
+  text-indent:38px;
+  height: 18px;
+  background-position: 12px 0px;
+}
+
+
+#publica_noticia{
+  background-image: url(../img/icon/flag.png);
+  background-repeat: no-repeat;
+  background-size:13px 14px;
+  text-indent:38px;
+  height: 18px;
+  background-position: 12px 0px;
+}
+
+#bot_estado{
+  height:38px;
+  width:: 516px;
+  background-color:white;
+  padding:12px;
+  margin:0;
+  overflow: hidden;
+  position: relative;
+
+
+
+}
+
+#bot_estado li{
+  height:38px;
+  line-height: 38px;
+  float: left;
+  border-radius: 13px;
+  background-color:#e9ebed;
+  text-align: center;
+  overflow: hidden;
+  margin-left: 5px;
+  padding: 0 20px 0px 20px;
+}
+
+#crear li:hover{
+  opacity: 0.5;
+}
+
+#bot_estado li:hover{
+  opacity: 0.5;
+}
+
+#estado_fotovideo{
+  background-image: url(../img/btn1.png);
+  font-size: 8pt;
+  background-repeat: no-repeat;
+  background-position: 17px 8px;
+  text-indent:25px;
+}
+
+#estado_etiqueta{
+  background-image: url(../img/btn2.png);
+  font-size: 8pt;
+  background-repeat: no-repeat;
+  background-position: 17px 8px;
+  text-indent:25px;
+}
+
+#estado_sentimi{
+  background-image: url(../img/btn3.png);
+  font-size: 8pt;
+  background-repeat: no-repeat;
+  background-position: 17px 8px;
+  text-indent:25px;
+}
+
+#estado_mas{
+ color: grey;
+
+}
+
+#post2{
+  border: solid 0;
+}
+
+
+#ajustes{
+  font-size: 10pt;
+  color:grey;
+  overflow: hidden;
+  background-color:#e9ebed;
+  margin:0;
+  padding:0;
+}
+
+#ajustes li{
+  background-color: white;
+  line-height: 25px;
+  padding: 0 15px 0 15px;
+  border-radius: 2px;
+  border: solid 1px;
+  display: inline;
+}
+
+#admin{
+background-image: url(../img/icon/aju.png);
+background-repeat: no-repeat;
+background-position: left;
+background-position:4px 7px;
+text-indent: 7px;
+float:left;
+margin:0 0 0 5px;
+}
+
+#vista{
+background-image: url(../img/icon/linea.png);
+background-repeat: no-repeat;
+background-position: left;
+background-position:4px 7px;
+text-indent: 7px;
+float: right;
+margin:0;
+}
+
+#cuadro{
+background-image: url(../img/icon/cuad.png);
+background-repeat: no-repeat;
+background-position:4px 4px;
+text-indent: 7px;
+float: right;
+margin:0;
+}
+
+
+
+#post3{
+  background-image: url(../img/FB-redondo.png);
+  background-repeat: no-repeat;
+  background-size:42px 42px;
+  text-indent:42px;
+  background-position: 24px 24px;
+  padding-top:24px;
+
+}
+
+#post3 h1{
+  font-size: 10pt;
+  display: inline;
+  color: #5066ae;
+
+
+}
+
+#post3 h2{
+  font-size: 8pt;
+  color: grey;
+  padding-left: 60px;
+
+}
+
+#post3 p{
+  font-size: 10pt;
+  border-bottom: solid 1px #ddd;
+  padding: 10px 24px 10px 24px;
+  margin:0 24px 12px 24px;
+  text-indent: 0;
+}
+
+.opinion{
+  font-size: 10pt;
+  display: inline;
+  color: grey;
+  font-weight: bold;
+}
+
+.opinion li:hover{
+opacity: 0.5;
+}
+
+#like{
+  background-image: url(../img/icon/like.png);
+  background-repeat: no-repeat;
+  background-position: 10px 1px;
+  padding: 4px;
+  margin: 12px 24px 12px 30px;
+
+
+}
+#comen{
+  background-image: url(../img/icon/comen.png);
+  background-repeat: no-repeat;
+  background-position: 10px 4px;
+  padding: 4px;
+  margin: 12px 20px 12px 20px;
+
+}
+#to2to{
+  background-image: url(../img/icon/to2to.png);
+  background-repeat: no-repeat;
+  background-position: 10px 4px;
+  padding: 4px;
+  margin: 12px 20px 12px 0px;
+}
+
+iframe{
+  margin:12px;
+}
+
+#text1 input {
+  resize: none;
+  width: 414px;
+  height: 75px;
+  border: none;
+  padding-left: 70px;
+  outline:none;
+  overflow: hidden;
+  font-size: 10pt;
+  background-image: url(../img/FB-redondo.png);
+  background-repeat: no-repeat;
+  background-size:42px 42px;
+  text-indent:42px;
+  background-position: 35px 18px;
+  border-bottom: solid 1px #ddd;
+}
+
+
+#surprise input {
+  resize: none;
+  width: 274px;
+  height: 30px;
+  padding: 20px;
+  border: none;
+  outline:none;
+  font-size: 10pt;
+  border-bottom: solid 1px #ddd;
+  text-align: center;
+}
+}
+
+
+@media only screen and (max-width: 959px){
+
+
+
+}
