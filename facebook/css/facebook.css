@@ -173,6 +173,7 @@ aside{
   background-size:16px 14px;
   background-position: left;
   padding: 0 20px 0 20px;
+
 }
 
 
@@ -182,6 +183,7 @@ aside{
   background-size:14px 15px;
   background-position: left;
   padding: 0 20px 0 20px;
+
 }
 
 
@@ -191,6 +193,7 @@ aside{
   background-size:12px 16px;
   background-position: left;
   padding: 0 20px 0 20px;
+
 }
 
 
@@ -620,7 +623,7 @@ iframe{
 
 
   body{
-
+    overflow-x: hidden;
     margin: 0;
     padding: 0;
     background-color: #FFFFFF;
@@ -744,10 +747,6 @@ iframe{
     width:80%;
   }
 
-  #presentacio{
-
-  }
-
   #presentacio p{
     border-bottom: solid 1px #ddd;
     box-shadow:0 1px 0 #ddd;
@@ -763,6 +762,7 @@ iframe{
   #presentacio li{
     margin:0 auto;
     display: block;
+    line-height: 25px;
   }
 
   #presentacio .study{
@@ -770,8 +770,6 @@ iframe{
     background-repeat: no-repeat;
     background-size:16px 14px;
     background-position: left;
-
-
   }
 
 
@@ -818,14 +816,14 @@ iframe{
   }
 
   #surprise img{
-    top: 25px;
-    bottom: 50px;
-    padding-left:145px;
+    top: 15px;
+    bottom: 15px;
+
   }
 
   #idioma{
     display: block;
-    text-indent: 73px;
+
   }
 
   #fotos ul{
@@ -840,13 +838,16 @@ iframe{
     margin: 2.5px;
     float: left;
     list-style-type: none;
-    width: 31.5%;
-    height: 31.5%;
+    width: 101px;
+    height: 101px;
     position: relative;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size:100%;
 
   }
+
+
+
 
   #amigos a{
     color:white;
@@ -906,7 +907,6 @@ iframe{
     background-image: url(../img/lateral.gif);
     background-repeat: no-repeat;
     background-size:24px;
-
     height: 24px;
   }
 
@@ -942,7 +942,6 @@ iframe{
 
   #crear{
     height: 38px;
-
     text-align: center;
     background-color:#e9ebed;
     font-size: 12px;
