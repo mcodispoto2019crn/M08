@@ -655,7 +655,7 @@ iframe{
   #contenent #cap img{
 
     top:90px;
-    left:130px;
+    left:110px;
     border-radius: 50%;
     border: solid white 4px;
     position: relative;
@@ -670,6 +670,7 @@ iframe{
     position: relative;
     text-align: center;
     top:70px;
+    margin-bottom:40px;
     color: black;
     font-family: 'helvetica';
     font-size: 28px;
@@ -739,11 +740,13 @@ iframe{
     font-size:12px;
     overflow:hidden;
     width: 100%;
-    margin: 10%;
+    margin: 8%;
     width:80%;
   }
 
+  #presentacio{
 
+  }
 
   #presentacio p{
     border-bottom: solid 1px #ddd;
@@ -753,8 +756,6 @@ iframe{
     background-image:url(../img/icon/dedos.png);
     background-repeat: no-repeat;
     background-size:14px 18px;
-
-    padding-left: 28px;
     background-position: 28px 0px;
 
   }
@@ -769,7 +770,8 @@ iframe{
     background-repeat: no-repeat;
     background-size:16px 14px;
     background-position: left;
-    padding: 0 20px 0 20px;
+
+
   }
 
 
@@ -778,7 +780,7 @@ iframe{
     background-repeat: no-repeat;
     background-size:14px 15px;
     background-position: left;
-    padding: 0 20px 0 20px;
+
   }
 
 
@@ -787,7 +789,7 @@ iframe{
     background-repeat: no-repeat;
     background-size:12px 16px;
     background-position: left;
-    padding: 0 20px 0 20px;
+
   }
 
 
@@ -838,11 +840,11 @@ iframe{
     margin: 2.5px;
     float: left;
     list-style-type: none;
-    width: 101px;
-    height: 101px;
+    width: 31.5%;
+    height: 31.5%;
     position: relative;
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: contain;
 
   }
 
@@ -863,14 +865,14 @@ iframe{
     margin: 2.5px;
     float: left;
     list-style-type: none;
-    width: 101px;
-    height: 101px;
+    width: 31.5%;
+    height: 31.5%;
     position: relative;
     background-size: 100%;
     background-repeat: no-repeat;
     font-size: 14px;
     text-align: justify;
-    line-height: 18px;
+    line-height: 100%;
 
 
   }
@@ -904,7 +906,7 @@ iframe{
     background-image: url(../img/lateral.gif);
     background-repeat: no-repeat;
     background-size:24px;
-    
+
     height: 24px;
   }
 
