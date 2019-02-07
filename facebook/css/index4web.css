@@ -1,4 +1,4 @@
-/*version escritorio*/
+/*1280px version escritorio*/
 @media (min-width: 960px){
 
 body{
@@ -10,17 +10,12 @@ body{
 aspect-decoration, landscape o portrait, color-gamutn, monochrome, resolution(max-min=ej:600dpi[movil estandar hoy])*/
 @media (max-width: 959px){
 
-body{
-  background-color: blue;
-}
-
-}
 
 
 body{
   margin: 0;
   padding: 0;
-  background-color: #e9ebed;
+  background-color: #FFFFFF;
   font-family: 'LucidaGrande', Tahoma, Segou UI, San Francisco, Roboto;
 
 
@@ -28,58 +23,52 @@ body{
 
 
 #barra{
-  height:43px;
-  background-color: #5066ae;
-  position:fixed;
-  top:0;
-  left:0;
-  right:0;
+
   z-index:9000;
+  position: fixed;
+  height:20px;
+  background-color: blue;
 }
 
 
 #contenent{
-  margin: auto;
-  width: 880px;
-  overflow: hidden;
-  background-color: #e9ebed;
+
 }
 
 
 li a{
-  text-decoration: none;
-  font-weight: bold;
 
 }
 
 
 #contenent #cap{
-  height: 408px;
+  height: 254px;
   background-image: url(../img/fsociety.jpg);
   background-repeat: no-repeat;
-  background-color: white;
-  background-size: 880px 358px;
+
+  background-size: 100% auto;
   box-shadow: 1px 0px 1px #666666;
   border-radius: 3px;
   }
 
 
 #contenent #cap img{
-  left:21px;
-  top:200px;
+
+  top:90px;
+  left:130px;
   border-radius: 50%;
   border: solid white 4px;
   position: relative;
-  width: 170px;
-  height: 170px;
+  width: 162px;
+  height: 162px;
   box-shadow: 2px 2px 2px #666666;
 }
 
 
 #cap h2{
   position: relative;
-  left: 230px;
-  top: 70px;
+  text-align: center;
+  top:70px;
   color: white;
   text-shadow: 2px 2px 2px #666666;
 }
