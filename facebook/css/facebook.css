@@ -558,24 +558,23 @@ margin:0;
 opacity: 0.5;
 }
 
-#like{
+.like{
   background-image: url(../img/icon/like.png);
   background-repeat: no-repeat;
   background-position: 10px 1px;
   padding: 4px;
   margin: 12px 24px 12px 30px;
-
-
 }
-#comen{
+
+.comen{
   background-image: url(../img/icon/comen.png);
   background-repeat: no-repeat;
   background-position: 10px 4px;
   padding: 4px;
   margin: 12px 20px 12px 20px;
-
 }
-#to2to{
+
+.to2to{
   background-image: url(../img/icon/to2to.png);
   background-repeat: no-repeat;
   background-position: 10px 4px;
@@ -616,6 +615,12 @@ iframe{
   border-bottom: solid 1px #ddd;
   text-align: center;
 }
+
+.text2 {
+  display:none;
+}
+
+
 }
 
 
@@ -631,18 +636,7 @@ iframe{
   }
 
   #barra{
-
   visibility: hidden;
-  }
-
-
-  #contenent{
-
-  }
-
-
-  li a{
-
   }
 
 
@@ -656,24 +650,19 @@ iframe{
 
 
   #contenent #cap img{
-
     top:90px;
-    left:110px;
+    left:32.5%;
     border-radius: 50%;
     border: solid white 4px;
     position: relative;
     width: 162px;
     height: 162px;
-
-
   }
 
 
   #cap h2{
-    position: relative;
     text-align: center;
-    top:70px;
-    margin-bottom:40px;
+    margin-top:100px;
     color: black;
     font-family: 'helvetica';
     font-size: 28px;
@@ -682,9 +671,7 @@ iframe{
 
 
   #menu{
-
     visibility: hidden;
-
   }
 
 
@@ -708,6 +695,9 @@ iframe{
 
   .der{
     width:100%;
+    float:none;
+    clear:none;
+    overflow: hidden;
   }
 
 
@@ -715,7 +705,7 @@ iframe{
     background-color: white;
     border-radius: 3px;
     border: solid 1px #ddd;
-    margin-top: 12px;
+    margin: 12px;
   }
 
 
@@ -742,9 +732,13 @@ iframe{
   #presentacio, #amigos, #fotos, #surprise, #idioma{
     font-size:12px;
     overflow:hidden;
-    width: 100%;
-    margin: 8%;
-    width:80%;
+    margin: 12px;
+    width:90%;
+
+  }
+
+  #presentacio{
+   margin-top:70px;
   }
 
   #presentacio p{
@@ -791,40 +785,6 @@ iframe{
   }
 
 
-  #amigos{
-  }
-
-  #fotos{
-  }
-
-  #surprise{
-  }
-
-  #surprise #le, #ri{
-    margin: 12px 30px 12px 30px;
-    display: inline-block;
-    color:grey;
-    font-size: 8pt;
-  }
-
-  #surprise #ri{
-    float: right;
-  }
-
-  #surprise #le{
-    float: left;
-  }
-
-  #surprise img{
-    top: 15px;
-    bottom: 15px;
-
-  }
-
-  #idioma{
-    display: block;
-
-  }
 
   #fotos ul{
     overflow: hidden;
@@ -835,67 +795,19 @@ iframe{
 
   #fotos img{
     padding:0;
-    margin: 2.5px;
+    margin:1.5%;
     float: left;
     list-style-type: none;
-    width: 101px;
-    height: 101px;
+    width: 30%;
+    height: 30%;
     position: relative;
-    background-repeat: no-repeat;
-    background-size:100%;
 
   }
 
 
-
-
-  #amigos a{
-    color:white;
-  }
-
-
-  #amigos ul{
-    overflow: hidden;
-    margin: 0;
-    padding: 0;
-  }
-
-
-  #amigos li{
-    padding:0;
-    margin: 2.5px;
-    float: left;
-    list-style-type: none;
-    width: 31.5%;
-    height: 31.5%;
-    position: relative;
-    background-size: 100%;
-    background-repeat: no-repeat;
-    font-size: 14px;
-    text-align: justify;
-    line-height: 100%;
-
-
-  }
-
-  #SM{background-image: url(https://smarcer2019crn.github.io/M08/s2m8uf104_marcer/img/perfil_yo.jpg);
-  }
-  #SF{background-image: url(https://sfernandez2019crn.github.io/M08/s2m8uf104_fernandez/img/gos.png);
-  }
-  #AC{background-image: url(https://acarranco2019crn.github.io/m08/s2m8uf0104carranco/img/profile.jpg);
-  }
-  #PS{background-image: url(https://psanz2019crn.github.io/M08/s2m8uf104_sanz/img/aoperfil.gif);
-  }
-  #GB{background-image: url(https://gbonsoms2019crn.github.io/M08/s2m8uf104_facebook/img/bird.jpg);
-  }
-  #SG{background-image: url(https://sgarzon2019crn.github.io/M08/s2m8uf104_facebook/img/perfil.jpg);
-  }
-  #VH{background-image: url(https://vherrero2019crn.github.io/M08/s2m8uf104facebook/img/perfil.png);
-  }
-  #NP{background-image: url(https://iprados2019crn.github.io/M08/s2m8uf104_iprados/img/fotoperfil.jpg);
-  }
-  #MM{background-image: url(https://mmunozp2019crn.github.io/M08/s2m8uf104_munoz/img/logo.jpg);
-  }
+ #amigos, #surprise, #idioma{
+   display:none;
+ }
 
 
   #seccio h2{
@@ -921,109 +833,8 @@ iframe{
   }
 
 
-  #amigos h3{
-    background-position: 0 -48px;
-  }
-
-
-  #surprise h3{
-    background-position: 0 -72px;
-  }
-
-
-  #surprise h5:hover{
-    opacity: 0.5;
-  }
-
-  #idioma h3{
-    background-position: 0 -72px;
-  }
-
-
-  #crear{
-    height: 38px;
-    text-align: center;
-    background-color:#e9ebed;
-    font-size: 12px;
-    margin:0;
-    padding: 12px;
-  }
-
-  #crear li {
-    border-right: solid 1px grey;
-    padding-right:12px;
-
-  }
-
-  #publica{
-    background-image: url(../img/icon/lapiz.png);
-    background-repeat: no-repeat;
-    background-size:12px 12px;
-    text-indent:38px;
-    height: 18px;
-    background-position: 12px 0px;
-  }
-
-  #publica_foto{
-    background-image: url(../img/icon/foto.png);
-    background-repeat: no-repeat;
-    background-size:14px 12px;
-    text-indent:38px;
-    height: 18px;
-    background-position: 12px 0px;
-  }
-
-
-  #publica_video{
-    background-image: url(../img/icon/directo.png);
-    background-repeat: no-repeat;
-    background-size:16px 14px;
-    text-indent:38px;
-    height: 18px;
-    background-position: 12px 0px;
-  }
-
-
-  #publica_noticia{
-    background-image: url(../img/icon/flag.png);
-    background-repeat: no-repeat;
-    background-size:13px 14px;
-    text-indent:38px;
-    height: 18px;
-    background-position: 12px 0px;
-  }
-
-  #bot_estado{
-    height:38px;
-    width:: 516px;
-    background-color:white;
-    padding:12px;
-    margin:0;
-    overflow: hidden;
-    position: relative;
-
-
-
-  }
-
-  #bot_estado li{
-    height:38px;
-    line-height: 38px;
-    float: left;
-    border-radius: 13px;
-    background-color:#e9ebed;
-    text-align: center;
-    overflow: hidden;
-    margin-left: 5px;
-    padding: 0 20px 0px 20px;
-  }
-
-  #crear li:hover{
-    opacity: 0.5;
-  }
-
-  #bot_estado li:hover{
-    opacity: 0.5;
+  #post1{
+    display: none;
   }
 
   #estado_fotovideo{
@@ -1050,13 +861,12 @@ iframe{
     text-indent:25px;
   }
 
-  #estado_mas{
-   color: grey;
 
-  }
 
   #post2{
     border: solid 0;
+    margin:0;
+
   }
 
 
@@ -1065,48 +875,50 @@ iframe{
     color:grey;
     overflow: hidden;
     background-color:#e9ebed;
-    margin:0;
-    padding:0;
+    padding: 12px;
   }
+
 
   #ajustes li{
     background-color: white;
-    line-height: 25px;
-    padding: 0 15px 0 15px;
+    padding:12px 12px;
     border-radius: 2px;
     border: solid 1px;
     display: inline;
+    margin-bottom: 20px;
   }
+
 
   #admin{
   background-image: url(../img/icon/aju.png);
   background-repeat: no-repeat;
   background-position: left;
   background-position:4px 7px;
-  text-indent: 7px;
   float:left;
-  margin:0 0 0 5px;
+  font: 0/0 a;
+  line-height: 1px;
   }
+
 
   #vista{
   background-image: url(../img/icon/linea.png);
   background-repeat: no-repeat;
   background-position: left;
   background-position:4px 7px;
-  text-indent: 7px;
   float: right;
-  margin:0;
+  font: 0/0 a;
+  line-height:1px;
   }
+
 
   #cuadro{
   background-image: url(../img/icon/cuad.png);
   background-repeat: no-repeat;
   background-position:4px 4px;
-  text-indent: 7px;
   float: right;
-  margin:0;
+  font: 0/0 a;
+  line-height: 1px;
   }
-
 
 
   #post3{
@@ -1116,7 +928,7 @@ iframe{
     text-indent:42px;
     background-position: 24px 24px;
     padding-top:24px;
-
+    width: 95%;
   }
 
   #post3 h1{
@@ -1142,61 +954,67 @@ iframe{
     text-indent: 0;
   }
 
-  .opinion{
-    font-size: 10pt;
-    display: inline;
+  .opinion li{
+    font-size: 0;
+    display:inline;
     color: grey;
     font-weight: bold;
+    padding: 12px 55px;
+    line-height: 12px;
+
+
   }
 
   .opinion li:hover{
   opacity: 0.5;
   }
 
-  #like{
+
+  .like{
     background-image: url(../img/icon/like.png);
     background-repeat: no-repeat;
-    background-position: 10px 1px;
-    padding: 4px;
-    margin: 12px 24px 12px 30px;
+
 
 
   }
-  #comen{
+
+
+  .comen{
     background-image: url(../img/icon/comen.png);
     background-repeat: no-repeat;
-    background-position: 10px 4px;
-    padding: 4px;
-    margin: 12px 20px 12px 20px;
+
 
   }
-  #to2to{
+
+
+  .to2to{
     background-image: url(../img/icon/to2to.png);
     background-repeat: no-repeat;
-    background-position: 10px 4px;
-    padding: 4px;
-    margin: 12px 20px 12px 0px;
+
+
   }
+
 
   iframe{
     margin:12px;
+    width: 410px;
+    height: 230px;
+
   }
 
-  #text1 input {
+
+  .text2 input {
     resize: none;
-    width: 414px;
-    height: 75px;
-    border: none;
-    padding-left: 70px;
-    outline:none;
+    width: 70%;
+    border: solid 0.5px grey;
+    border-radius: 30px;
+    margin:12px;
+    padding: 12px;
     overflow: hidden;
     font-size: 10pt;
-    background-image: url(../img/FB-redondo.png);
-    background-repeat: no-repeat;
-    background-size:42px 42px;
-    text-indent:42px;
-    background-position: 35px 18px;
-    border-bottom: solid 1px #ddd;
+    outline:none;
+    margin-top: 0;
+
   }
 
 
