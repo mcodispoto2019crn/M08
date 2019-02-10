@@ -1,10 +1,10 @@
-@media only screen and (min-width: 960px){
+@media only screen and (min-width: 640px){
 body{
   margin: 0;
   padding: 0;
   background-color: #e9ebed;
   font-family: 'LucidaGrande', Tahoma, Segou UI, San Francisco, Roboto;
-
+  overflow: scroll;
 
 }
 
@@ -624,7 +624,7 @@ iframe{
 }
 
 
-@media only screen and (max-width: 959px){
+@media only screen and (max-width: 639px){
 
 
   body{
@@ -999,7 +999,6 @@ iframe{
     margin:12px;
     width: 410px;
     height: 230px;
-
   }
 
 
@@ -1015,19 +1014,6 @@ iframe{
     outline:none;
     margin-top: 0;
 
-  }
-
-
-  #surprise input {
-    resize: none;
-    width: 274px;
-    height: 30px;
-    padding: 20px;
-    border: none;
-    outline:none;
-    font-size: 10pt;
-    border-bottom: solid 1px #ddd;
-    text-align: center;
   }
 
 
