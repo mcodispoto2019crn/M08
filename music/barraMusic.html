@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Music</title>
+  <style>
+/* 1---------- Controlador -------------*/
+    input[type=range] {
+      -webkit-appearance: none;
+      width: 100%;
+      background:transparent;
+      position: relative;
+      margin:0;
+    }
+
+    input[type=range]:focus {
+      outline:none;
+    }
+
+/* 1.1---------- Carril -------------*/
+    input[type=range]::-webkit-slider-runnable-track {
+      width: 100%;
+      height: 20px;
+      background: #4c4d4d;
+      border-radius: 10px;
+      cursor:pointer;
+    }
+
+/* 1.2---------- Controlador -------------*/
+    input[type=range]::-webkit-slider-thumb {
+      position: relative;
+      -webkit-appearance:none;
+      height: 20px;
+      width: 20px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.4);
+      cursor:pointer;
+      z-index: 3;
+    }
+
+/* 2.0---------- Botones -------------*/
+    #playPause{
+      border: none;
+      text-decoration: none;
+      width: 50px;
+      height: 50px;
+      background: #31FF9A;
+      border-radius: 50%;
+      position: relative;
+      z-index: -20px;
+    }
+
+    #playPause:focus{
+      outline: none;
+      position: relative;
+      background-color: #27CC7B;
+    }
+
+
+    #playPause:after{
+      content: "";
+      width: 8px;
+      height: 26px;
+      left:40px;
+      top:38px;
+      z-index: 200;
+      position: absolute;
+      display: block;
+      background: white;
+      margin: -26px;
+      border-radius: 2px;
+    }
+
+
+
+    #playPause:before{
+      content: "";
+      border-top: solid 15px transparent;
+      border-left: solid 23px white;
+      border-right: solid 15px transparent;
+      border-bottom: solid 15px transparent;
+      position: absolute;
+      display: block;
+      margin-top:-14px;
+      margin-left: 9px;
+      border-radius: 3px;
+    }
+
+
+
+    .bck, .fwd{
+      border: none;
+      text-decoration: none;
+      width: 50px;
+      height: 50px;
+      background: #31FF9A;
+      border-radius: 50%;
+      position: relative;
+      z-index: -20px;
+    }
+
+    .bck:focus, .fwd:focus{
+      outline: none;
+      position: relative;
+      background-color: #27CC7B;
+    }
+
+    .bck:before, .bck:after{
+      content: "";
+      width: 8px;
+      height: 20px;
+      left:20px;
+      z-index: 200;
+      border-top: solid 5px transparent;
+      border-left: solid 5px transparent;
+      border-right: solid 15px white;
+      border-bottom: solid 5px transparent;
+      position: absolute;
+      display: block;
+      margin: -15px;
+      border-radius: 3px;
+    }
+
+
+
+    /* Prueba de barra, era un div escondido, pero mejor como esta ahora.
+
+    .fake {
+      width: 10%;
+      height: 20px;
+      position: relative;
+      background:red;
+      margin: 0;
+      top: 20px;
+      border-radius: 10px;
+      z-index: 2;
+      background: rgba(255,255,255,0.2);
+    }*/
+
+
+  </style>
+
+  <script type="text/javascript">
+
+
+  var reproducir, playpause, barra;
+
+  function iniciaRepro(){
+    reproducir = document.getElementById('reproducir');
+    playpause = document.getElementById('playPause');
+    barra = document.getElementById('controlador');
+
+    playpause.addEventListener("click", playPause, false);
+    barra.addEventListener("change", posicionAudio, false);
+    reproducir.addEventListener("timeupdate", actuaTiempo, false);
+  }
+
+    window.onload = iniciaRepro;
+
+//para play y pausa,
+
+  function playPause() {
+    if(reproducir.paused){
+      reproducir.play();
+      reproducir.blur();
+    }
+    else{
+      reproducir.pause();
+      reproducir.focus();
+    }
+  }
+
+//para pasar el tiempo de la cancion a la barra
+
+  function posicionAudio(){
+
+    var vesA = reproducir.duration *(barra.value / 100);
+    reproducir.currentTime = vesA;
+  }
+
+//para mover la barra sola
+
+  function actuaTiempo(){
+    var nuevoTiempo= reproducir.currentTime *(100/reproducir.duration);
+    barra.value= nuevoTiempo;
+  }
+
+  </script>
+
+</head>
+
+<body>
+
+
+
+  <input id="controlador" type="range" value="0" min="0" max="100" step="1">
+
+  <audio id="reproducir" width="500px" heigth="40px" autoplay controls src="audio/nicolasJaar/NicolasJaarAndISay.mp3" type="audio/mpeg"></audio>
+
+  </br>
+
+  <button class="bck"></button>
+  <button id="playPause" onclick="playPause"></button>
+  <button class="fwd"></button>
+
+</body>
+</html>

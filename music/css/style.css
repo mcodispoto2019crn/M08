@@ -1,0 +1,233 @@
+@media only screen and (max-width: 600px) {
+
+*{
+  padding: 0;
+  margin:0;
+  font-family: 'Futura', sans-serif;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+
+}
+
+::-webkit-scrollbar {
+
+  border-radius: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgba(0,0,0,0);
+
+}
+
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #31D9A6;
+  border-radius: 8px;
+
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #50D1A8;
+  border-radius: 8px;
+}
+
+
+.contenedor{
+  width: 100%;
+  max-width: 600px;
+  margin:auto;
+}
+
+/* 0.0 Day and night */
+
+:root{
+	--bgWhite:#f2f2f2;
+	--bgBlack:#2E3332;
+	--colorBlack:var(--bgBlack);
+	--colorWhite: var(--bgWhite);
+}
+.border{
+	position: absolute;
+	width: 73px;
+	height: 40px;
+	background: var(--bgWhite);
+	border:2px solid var(--colorBlack);
+	border-radius: 10px;
+	cursor: pointer;
+	margin:4px;
+  display: block;
+  overflow: hidden;
+}
+
+.button{
+	width: 25px;
+	height: 25px;
+	margin:6px 3.4px;
+	border-radius: 50%;
+	background: var(--bgBlack);
+	transition: .5s;
+  position: relative;
+  z-index: 100!Important;
+
+
+}
+.day{
+	width: 100%;
+	height: 100vh;
+	box-sizing: border-box;
+	background: var(--bgWhite);
+	color: var(--colorBlack);
+	transition: 1s;
+	text-align: center;
+  text-decoration: none;
+}
+
+/* 0.1 Movimiento */
+
+.activeBorder{
+	background: var(--bgBlack);
+	border:2px solid var(--colorWhite);
+}
+.active{
+	background: var(--bgWhite);
+	transform: translateX(150%);
+  z-index: 1000000;
+}
+.night{
+	background: var(--bgBlack);
+	color:var(--colorWhite);
+}
+
+
+/* 1.0 Barra Fija */
+
+#menu-fixed{
+  z-index: 10000;
+  position: fixed;
+  top: 0;
+}
+
+.barra{
+  height: 50px;
+  width: 100%;
+  background-color: #31D9A6;
+  z-index:50;
+}
+
+/* 1.1 iconos */
+
+.sol, .luna, .ajustes{
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 30px;
+  width: 32px;
+  position: relative;
+  background-color: transparent;
+  border:none;
+  margin-top:10px;
+  z-index: 90;
+
+}
+
+.sol{
+  background-image: url(../img/sol.png);
+  float:left;
+  top:-7px;
+
+}
+
+.luna{
+  background-image: url(../img/luna.png);
+  float:left;
+  top:-7px;
+}
+
+.ajustes{
+  background-image: url(../img/ajustes.png);
+  float:right;
+}
+
+/* 2.0 Contenido ultimos exitos, suherencias, más escuchados  */
+
+.ultimo{
+  margin: 20px auto;
+  padding: 20px;
+}
+
+.ultimo h2{
+  text-align: center;
+  margin-top: 20px;
+}
+
+.ultimo ul{
+  list-style: none;
+  width: 95% auto;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(30, calc(50% - 80px));
+  grid-template-rows: minmax(150px, 1fr);
+  height: 197px;
+}
+
+.ultimo li{
+  float: left;
+  margin: 20px;
+  background: var(--bgWhite);
+  line-height: 2 20px;
+  padding-top: 125px;
+}
+
+
+
+
+/* 2.1 imgagenes ultimos exitos */
+
+#chilli, #jaar, #badBunny, #locoPlaya{
+  background-position: top;
+  background-repeat: no-repeat;
+  position: relative;
+  border:none;
+  width: 120px;
+  height: 120px;
+  background-size: 100%;
+}
+
+#chilli{
+  background-image: url(../img/chilli.png);
+}
+
+#jaar{
+  background-image: url(../img/jaar.jpg);
+}
+
+#badBunny{
+  background-image: url(../img/badBunny.jpg);
+}
+
+#locoPlaya{
+  background-image: url(../img/locoplaya.jpg);
+}
+
+}
+
+
+/* footer */
+
+footer {
+  width: 100%;
+  margin-top:20px;
+  height: 90px;
+  background-color:   #31D9A6;
+  position: fixed;
+
+}
