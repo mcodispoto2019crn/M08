@@ -59,54 +59,49 @@ window.onload = function(){
 	var canciones=['A time for us','And I say','Lets Live For Today','El bandido','Mi mujer'];
 	var songz=['audio/nicolasJaar/NicolasJaarAtimeforus.mp3','audio/nicolasJaar/NicolasJaarAndISay.mp3','audio/nicolasJaar/NicolasJaarLetSLiveForToday.mp3','audio/nicolasJaar/NicolasJaarElBandido.mp3','audio/nicolasJaar/NicolasJaarMiMujer.mp3'];
 	var i=0;
-	var aleatorio=false;
+	var aleatorio= "false";
+	var lastSong={};
+	lastSong.index = 0;
+  lastSong.lastIndex = lastSong;
 
-	function fwdmusic(){
-	  if (i==songz.length-1) {i=0;} else {i++;}
-	document.getElementById('reproducir').src=songz[i];
-	document.getElementById('cancion').innerHTML=canciones[i];
+
+  function fwdmusic(){
+		var currentSong={};
+    currentSong.index = i;
+    currentSong.lastIndex = lastSong;
+    lastSong = currentSong;
+
 	if (aleatorio == "true"){
-			 i = Math.random()*songz.length;
+
+			 i = Math.trunc(Math.random()*songz.length);
+
 	 }
 	 else{
-		 if (i==0) {i=songz.length-1;} else {i--;}
-	 }
+      i++;
+      if (i==songz.length) {i=0;}
+    }
+
 	 document.getElementById('reproducir').src=songz[i];
 	 document.getElementById('cancion').innerHTML=canciones[i];
  }
 
 	function bckmusic(){
-	  if (i==0) {i=songz.length-1;} else {i--;}
+		if (aleatorio == "true"){
+			i = lastSong.index;
+			lastSong = lastSong.lastIndex;
+
+		 }
+		 else{
+			 if (i==0) {i=songz.length-1;} else {i--;}
+		 }
+
 	document.getElementById('reproducir').src=songz[i];
 	document.getElementById('cancion').innerHTML=canciones[i];
 	}
 
-	var listado = document.getElementById("aleatorio");
-	for (i=0;i<songz.length;i++) {
-		var item = document.createElement("button");
-		item.innerHTML = songz[i][1];
-		listado.appendChild(item);
-
-		}
-
-		numero = Math.random()*songz.length;
-
-		var source= document.createElement('audio');
-		audio.src=songz[numero][0];
-		audio.type="audio/mpeg";
-
-	function cargarCancion(numero){
-
-
-	  reproducir.appendChild(audio);
-
-  	reproducir.load();
-  	reproducir.play();
-
-  	var texto = document.getElementById("cancion");
-  	texto.innerHTML = canciones[numero][1];
-		}
-
-		reproducir.addEventListener("ended", function(){
-  	cargarCancion(aleatorio());
-});
+function toggleAleatorio(){
+	if (aleatorio == "false")
+		aleatorio = "true";
+	else if (aleatorio == "true")
+		aleatorio = "false";
+}
