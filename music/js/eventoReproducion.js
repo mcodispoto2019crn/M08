@@ -100,8 +100,12 @@ window.onload = function(){
 	}
 
 function toggleAleatorio(){
-	if (aleatorio == "false")
+	if (aleatorio == "false"){
 		aleatorio = "true";
-	else if (aleatorio == "true")
+		document.getElementById('aleatorio').children[0].src='img/luna.png';
+	}
+	else if (aleatorio == "true"){
 		aleatorio = "false";
+		document.getElementById('aleatorio').children[0].src='img/sol.png';
+	}
 }

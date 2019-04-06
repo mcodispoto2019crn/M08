@@ -285,17 +285,35 @@ body::-webkit-scrollbar {
   position: relative;
 }
 
-#aleatorio{
+/*#aleatorio{
+  position:relative;
+  border: none;
+  text-decoration:none;
+  width: 50px;
+  height: 50px;
+
+  top:100px;
+}
+#aleatorio:before, #aleatorio:after{
+  content: " ";
+  position:relative;
+
+  background: red;
+
+}
+
+#aleatorio:focus:before{
+content: " ";
+  background: blue;
   position:relative;
   border: none;
   text-decoration:none;
   width: 100px;
   height: 100px;
-  background: red;
-  border-radius: 50px;
-  top:100px;
 }
 
+#aleatorio:focus:after{
+  visibility:hidden;}*/
 /* footer */
 
 footer {
