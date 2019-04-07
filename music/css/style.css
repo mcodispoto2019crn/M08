@@ -17,6 +17,7 @@ body::-webkit-scrollbar {
 ::-webkit-scrollbar {
 
   border-radius: 8px;
+
 }
 
 /* Track */
@@ -176,65 +177,52 @@ body::-webkit-scrollbar {
   grid-gap: 10px;
   grid-template-columns: repeat(30, calc(50% - 80px));
   grid-template-rows: minmax(150px, 1fr);
-  height: 197px;
+  height: 210px;
+
 }
 
 .ultimo li{
   float: left;
   margin: 20px;
-  background: var(--bgWhite);
   line-height: 2 20px;
   text-decoration: none;
+
 }
 
+/* 2.1 imgagenes ultimos exitos, sugerencias, mas escuchadas */
 
-
-
-/* 2.1 imgagenes ultimos exitos */
-
-#chilli, #jaar, #badBunny, #locoPlaya{
-  background-position: top;
-  background-repeat: no-repeat;
+.ultimo img{
   position: relative;
   border:none;
   width: 120px;
   height: 120px;
-  background-size: 100%;
 }
 
-#chilli{
-
-}
-
-#jaar{
-  background-image: url(../img/jaar.jpg);
-}
-
-#badBunny{
-  background-image: url(../img/badBunny.jpg);
-}
-
-#locoPlaya{
-  background-image: url(../img/locoplaya.jpg);
-}
-
-}
 
 a{
   text-decoration: none;
   text-align: center;
-
+}
+a:link {
+  color:  var(--colorBlack);
 }
 
-.ultimo img{
-
-  position: relative;
-  border:none;
-  width: 120px;
-  height: 120px;
-
-
+/* visited link */
+a:visited {
+  color:  var(--colorBlack);
 }
+
+/* mouse over link */
+a:hover {
+  color:  var(--colorBlack);
+}
+
+/* selected link */
+a:active {
+  color:  var(--colorBlack);
+}
+
+
 
 /* footer */
 
@@ -244,5 +232,8 @@ footer {
   height: 90px;
   background-color:   #31D9A6;
   position: fixed;
+
+}
+
 
 }

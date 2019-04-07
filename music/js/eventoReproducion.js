@@ -3,6 +3,7 @@ var autor;
 
 window.onload = function(){
 	autor= unescape(window.location.search.substring(1));
+	document.getElementById('cover').src=coverCanciones[autorPosiciones[autor]][i];
 	document.getElementById('reproducir').src=songz[autorPosiciones[autor]][i];
 	document.getElementById('cancion').innerHTML=tituloCanciones[autorPosiciones[autor]][i];
 	document.getElementById('artista').innerHTML=autor;
@@ -13,8 +14,10 @@ window.onload = function(){
 		var day = document.querySelector('.day').classList.toggle("night");
 	});
 	iniciaRepro();
+	document.getElementById('aleatorio').children[0].src='img/bucle.svg';
 	document.getElementsByClassName('fwdmusic').addEventListener('click',fwdmusic);
 	document.getElementsByClassName('bckmusic').addEventListener('click',bckmusic);
+
 
 
 }
@@ -88,8 +91,17 @@ window.onload = function(){
 
 	songz[autorPosiciones["kaseO"]]=['audio/kaseO/KASE.O - 06. VIEJOS CIEGOS con XHELAZZ y SHO HAI Prod  por BIG HOZONE.mp3','audio/kaseO/KASE.O - 09. MITAD Y MITAD con NAJWA Prod  JAVATO JONES y GONZALO LASHERAS.mp3','audio/kaseO/KASE.O - 10. MAZAS Y CATAPULTAS Prod  JAVATO JONES y GONZALO LASHERAS.mp3','audio/kaseO/KASE.O - ESTO NO PARA (Prod. CASH FLOW) VideoLyric Oficial.mp3','audio/kaseO/KASE.O - YEMEN (Prod. EL ARKEOLOGO) VideoClip Oficial.mp3'];
 
+	var coverCanciones=[];
 
+	coverCanciones[autorPosiciones["Nicolas Jaar"]]=['/img/jaar.jpg'];
 
+	coverCanciones[autorPosiciones["Loco Playa"]]=['/img/locoplaya.jpg'];
+
+	coverCanciones[autorPosiciones["Red Hot Chili Peppers"]]=['/img/chilli.png'];
+
+	coverCanciones[autorPosiciones["Bad Bunny"]]=['/img/badBunny.jpg'];
+
+	coverCanciones[autorPosiciones["kaseO"]]=['/img/kaseo.jpg'];
 
 	var i=0;
 	var aleatorio= "false";
@@ -114,9 +126,11 @@ window.onload = function(){
       if (i==songz[autorPosiciones[autor]].length) {i=0;}
     }
 
+	 document.getElementById('cover').src=coverCanciones[autorPosiciones[autor]][i];
 	 document.getElementById('reproducir').src=songz[autorPosiciones[autor]][i];
 	 document.getElementById('cancion').innerHTML=tituloCanciones[autorPosiciones[autor]][i];
 	 document.getElementById('artista').innerHTML=autor;
+
  }
 
 	function bckmusic(){
@@ -129,6 +143,7 @@ window.onload = function(){
 			 if (i==0) {i=songz[autorPosiciones[autor]].length-1;} else {i--;}
 		 }
 
+	document.getElementById('cover').src=coverCanciones[autorPosiciones[autor]][i];
 	document.getElementById('reproducir').src=songz[autorPosiciones[autor]][i];
 	document.getElementById('cancion').innerHTML=tituloCanciones[autorPosiciones[autor]][i];
 	document.getElementById('artista').innerHTML=autor;
@@ -137,10 +152,10 @@ window.onload = function(){
 function toggleAleatorio(){
 	if (aleatorio == "false"){
 		aleatorio = "true";
-		document.getElementById('aleatorio').children[0].src='img/luna.png';
+		document.getElementById('aleatorio').children[0].src='img/bucle.svg';
 	}
 	else if (aleatorio == "true"){
 		aleatorio = "false";
-		document.getElementById('aleatorio').children[0].src='img/sol.png';
+		document.getElementById('aleatorio').children[0].src='img/aleatorio.svg';
 	}
 }

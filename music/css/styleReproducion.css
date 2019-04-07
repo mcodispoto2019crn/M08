@@ -127,13 +127,11 @@ body::-webkit-scrollbar {
 
 /* 2.0 Contenido  */
 
-.cover {
+#cover {
   width: 300px;
   height: 300px;
   top: 10%;
   left:22%;
-  background-image: url(../img/jaar.jpg);
-  background-size: 100%;
   position: relative;
 }
 
@@ -275,7 +273,7 @@ body::-webkit-scrollbar {
 }
 
 .rep{
-  top:25%;
+
   width: 80%;
   left: 10%;
   position: relative;
@@ -283,43 +281,29 @@ body::-webkit-scrollbar {
 .botonera{
   margin-top: 10%;
   position: relative;
+  margin-top:40%;
 }
 
-/*#aleatorio{
-  position:relative;
+#aleatorio, #aleatorio:focus{
+  outline: none;
+  width: 30px;
+  height: 30px;
   border: none;
-  text-decoration:none;
-  width: 50px;
-  height: 50px;
-
-  top:100px;
-}
-#aleatorio:before, #aleatorio:after{
-  content: " ";
-  position:relative;
-
-  background: red;
+  position: absolute;
+  background-color: transparent;
+  margin-top:25%;
 
 }
 
-#aleatorio:focus:before{
-content: " ";
-  background: blue;
-  position:relative;
-  border: none;
-  text-decoration:none;
-  width: 100px;
-  height: 100px;
+#aleatorio img{
+  width: 30px;
+  height: 30px;
 }
-
-#aleatorio:focus:after{
-  visibility:hidden;}*/
-/* footer */
 
 footer {
   width: 100%;
   height: 90px;
-  background-color:   #31D9A6;
+  background-color:#31D9A6;
   position: fixed;
 
 }
