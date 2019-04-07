@@ -184,7 +184,7 @@ body::-webkit-scrollbar {
   margin: 20px;
   background: var(--bgWhite);
   line-height: 2 20px;
-  padding-top: 125px;
+  text-decoration: none;
 }
 
 
@@ -203,7 +203,7 @@ body::-webkit-scrollbar {
 }
 
 #chilli{
-  background-image: url(../img/chilli.png);
+
 }
 
 #jaar{
@@ -220,6 +220,21 @@ body::-webkit-scrollbar {
 
 }
 
+a{
+  text-decoration: none;
+  text-align: center;
+
+}
+
+.ultimo img{
+
+  position: relative;
+  border:none;
+  width: 120px;
+  height: 120px;
+
+
+}
 
 /* footer */
 

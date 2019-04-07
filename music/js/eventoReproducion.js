@@ -1,4 +1,12 @@
+var autor;
+
+
 window.onload = function(){
+	autor= unescape(window.location.search.substring(1));
+	document.getElementById('reproducir').src=songz[autorPosiciones[autor]][i];
+	document.getElementById('cancion').innerHTML=tituloCanciones[autorPosiciones[autor]][i];
+	document.getElementById('artista').innerHTML=autor;
+
 	var toggleButton = document.querySelector('.toggleButton').addEventListener('click',function(){
 		var border = document.querySelector('.border').classList.toggle("activeBorder");
 		var button = document.querySelector('.button').classList.toggle("active");
@@ -56,8 +64,33 @@ window.onload = function(){
 		console.log(barra.value);
   }
 
-	var canciones=['A time for us','And I say','Lets Live For Today','El bandido','Mi mujer'];
-	var songz=['audio/nicolasJaar/NicolasJaarAtimeforus.mp3','audio/nicolasJaar/NicolasJaarAndISay.mp3','audio/nicolasJaar/NicolasJaarLetSLiveForToday.mp3','audio/nicolasJaar/NicolasJaarElBandido.mp3','audio/nicolasJaar/NicolasJaarMiMujer.mp3'];
+	var autorPosiciones = {"Nicolas Jaar":0,"Loco Playa":1,"Red Hot Chili Peppers":2,"Bad Bunny":3, "kaseO":4};
+
+	var tituloCanciones=[];
+	tituloCanciones[autorPosiciones["Nicolas Jaar"]]=['A time for us','And I say','Lets Live For Today','El bandido','Mi mujer'];
+
+	tituloCanciones[autorPosiciones["Loco Playa"]]=['Los porros no dan sueño','Mucho','Poco','Crazy','Cuelga tú', 'Más fresco','Vamoavé'];
+
+	tituloCanciones[autorPosiciones["Red Hot Chili Peppers"]]=['Californication',' Otherside',' Scar Tissue','Under The Bridge'];
+
+	tituloCanciones[autorPosiciones["Bad Bunny"]]=['Amor Foda','Mia','Caro','Ni bien ni mal'];
+
+	tituloCanciones[autorPosiciones["kaseO"]]=['Viejos ciegos','Mitad y mitad','Maza y catapultas','Esto no para','Yemen'];
+
+	var songz=[];
+	songz[autorPosiciones["Nicolas Jaar"]]=['audio/nicolasJaar/NicolasJaarAtimeforus.mp3','audio/nicolasJaar/NicolasJaarAndISay.mp3','audio/nicolasJaar/NicolasJaarLetSLiveForToday.mp3','audio/nicolasJaar/NicolasJaarElBandido.mp3','audio/nicolasJaar/NicolasJaarMiMujer.mp3'];
+
+	songz[autorPosiciones["Loco Playa"]]=['audio/locoPlaya/10. Locoplaya - Los porros no dan sueño.mp3','audio/locoPlaya/BEJO - MUCHO  (Vidéo).mp3','audio/locoPlaya/BEJO - POCO (Vidéo).mp3','audio/locoPlaya/LOCOPLAYA - CRAZY (Vidéo).mp3','audio/locoPlaya/LOCOPLAYA - CUELGA TÚ (VIDÉO).mp3','audio/locoPlaya/LOCOPLAYA - MÁS FRESCO (Videoclip).mp3','audio/locoPlaya/LOCOPLAYA - VAMOAVÉ (VIDÉO).mp3'];
+
+	songz[autorPosiciones["Red Hot Chili Peppers"]]=['audio/chilliHotPepper/Red Hot Chili Peppers - Californication [Official Music Video].mp3','audio/chilliHotPepper/Red Hot Chili Peppers - Otherside [Official Music Video].mp3','audio/chilliHotPepper/Red Hot Chili Peppers - Scar Tissue [Official Music Video].mp3','audio/chilliHotPepper/Red Hot Chili Peppers - Under The Bridge [Official Music Video].mp3'];
+
+	songz[autorPosiciones["Bad Bunny"]]=['audio/badBunny/Bad Bunny - Amor Foda  Video Oficial.mp3','audio/badBunny/Bad Bunny feat. Drake - Mia ( Video Oficial ).mp3','audio/badBunny/Caro - Bad Bunny ( Video Oficial ).mp3','audio/badBunny/NI BIEN NI MAL - Bad Bunny  X100PRE.mp3'];
+
+	songz[autorPosiciones["kaseO"]]=['audio/kaseO/KASE.O - 06. VIEJOS CIEGOS con XHELAZZ y SHO HAI Prod  por BIG HOZONE.mp3','audio/kaseO/KASE.O - 09. MITAD Y MITAD con NAJWA Prod  JAVATO JONES y GONZALO LASHERAS.mp3','audio/kaseO/KASE.O - 10. MAZAS Y CATAPULTAS Prod  JAVATO JONES y GONZALO LASHERAS.mp3','audio/kaseO/KASE.O - ESTO NO PARA (Prod. CASH FLOW) VideoLyric Oficial.mp3','audio/kaseO/KASE.O - YEMEN (Prod. EL ARKEOLOGO) VideoClip Oficial.mp3'];
+
+
+
+
 	var i=0;
 	var aleatorio= "false";
 	var lastSong={};
@@ -73,16 +106,17 @@ window.onload = function(){
 
 	if (aleatorio == "true"){
 
-			 i = Math.trunc(Math.random()*songz.length);
+			 i = Math.trunc(Math.random()*songz[autorPosiciones[autor]].length);
 
 	 }
 	 else{
       i++;
-      if (i==songz.length) {i=0;}
+      if (i==songz[autorPosiciones[autor]].length) {i=0;}
     }
 
-	 document.getElementById('reproducir').src=songz[i];
-	 document.getElementById('cancion').innerHTML=canciones[i];
+	 document.getElementById('reproducir').src=songz[autorPosiciones[autor]][i];
+	 document.getElementById('cancion').innerHTML=tituloCanciones[autorPosiciones[autor]][i];
+	 document.getElementById('artista').innerHTML=autor;
  }
 
 	function bckmusic(){
@@ -92,11 +126,12 @@ window.onload = function(){
 
 		 }
 		 else{
-			 if (i==0) {i=songz.length-1;} else {i--;}
+			 if (i==0) {i=songz[autorPosiciones[autor]].length-1;} else {i--;}
 		 }
 
-	document.getElementById('reproducir').src=songz[i];
-	document.getElementById('cancion').innerHTML=canciones[i];
+	document.getElementById('reproducir').src=songz[autorPosiciones[autor]][i];
+	document.getElementById('cancion').innerHTML=tituloCanciones[autorPosiciones[autor]][i];
+	document.getElementById('artista').innerHTML=autor;
 	}
 
 function toggleAleatorio(){
