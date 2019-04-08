@@ -375,3 +375,384 @@ footer {
 
 
 }
+
+@media only screen and (min-width: 641px) {
+
+  *{
+    padding: 0;
+    margin:0 auto;
+    font-family: 'Futura', sans-serif;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    text-align: center;
+  }
+
+  body::-webkit-scrollbar {
+      display: none;
+
+  }
+
+
+  /* 0.0 Day and night */
+
+  :root{
+  	--bgWhite:#f2f2f2;
+  	--bgBlack:#2E3332;
+  	--colorBlack:var(--bgBlack);
+  	--colorWhite: var(--bgWhite);
+  }
+  .border{
+  	position: absolute;
+  	width: 73px;
+  	height: 40px;
+  	background: var(--bgWhite);
+  	border:2px solid var(--colorBlack);
+  	border-radius: 10px;
+  	cursor: pointer;
+  	margin:4px;
+    display: block;
+    overflow: hidden;
+  }
+
+  .button{
+  	width: 25px;
+  	height: 25px;
+  	margin:6px 3.4px;
+  	border-radius: 50%;
+  	background: var(--bgBlack);
+  	transition: .5s;
+    position: relative;
+    z-index: 100;
+
+
+  }
+  .day{
+  	width: 100%;
+  	height: 100vh;
+  	box-sizing: border-box;
+  	background: var(--bgWhite);
+  	color: var(--colorBlack);
+  	transition: 1s;
+  	text-align: center;
+    text-decoration: none;
+  }
+
+  /* 0.1 Movimiento */
+
+  .activeBorder{
+  	background: var(--bgBlack);
+  	border:2px solid var(--colorWhite);
+  }
+  .activado{
+  	background: var(--bgWhite);
+  	transform: translateX(150%);
+    z-index: 1000000;
+  }
+  .night{
+  	background: var(--bgBlack);
+  	color:var(--colorWhite);
+  }
+
+
+  /* 1.0 Barra Fija */
+
+  #menu-fixed{
+    z-index: 10000;
+    position: fixed;
+    top: 0;
+  }
+
+  .barra{
+    height: 50px;
+    width: 100%;
+    background-color: #31D9A6;
+    z-index:50;
+  }
+
+  /* 1.1 iconos */
+
+  .sol, .luna, .ajustes{
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 30px;
+    width: 32px;
+    position: relative;
+    background-color: transparent;
+    border:none;
+    margin-top:10px;
+    z-index: 90;
+
+  }
+
+  .sol{
+    background-image: url(../img/sol.png);
+    float:left;
+    top:-7px;
+
+  }
+
+  .luna{
+    background-image: url(../img/luna.png);
+    float:left;
+    top:-7px;
+  }
+
+  .ajustes{
+    background-image: url(../img/ajustesBlack.svg);
+    float:right;
+    margin-right: 10px;
+  }
+  .ajustesNight{
+    background-image: url(../img/ajustesWhite.svg);
+    float:right;
+    margin-right: 10px;
+  }
+
+  /* 2.0 Contenido  */
+
+  #cover {
+    width: 300px;
+    height: 300px;
+    top:70px;
+    position: relative;
+  }
+
+  .info {
+    width: 300px;
+    height: 120px;
+    position: relative;
+    top: 18%;
+  }
+
+
+  .info h2{
+    padding-top: 20px;
+    font-size: 22pt;
+    line-height: 3 24pt;
+    font-weight:  900;
+
+
+  }
+  .info h5{
+    font-size: 12pt;
+    text-transform: uppercase;
+    font-weight: lighter;
+
+  }
+
+  /* 3---------- Controlador -------------*/
+      input[type=range] {
+        -webkit-appearance: none;
+        width: 100%;
+        background:transparent;
+        position: relative;
+        margin:0;
+      }
+
+      input[type=range]:focus {
+        outline:none;
+      }
+
+  /* 3.1---------- Carril -------------*/
+      input[type=range]::-webkit-slider-runnable-track {
+        width: 100%;
+        height: 20px;
+        background: #4c4d4d;
+        border-radius: 10px;
+        cursor:pointer;
+      }
+
+  /* 3.2---------- Controlador -------------*/
+      input[type=range]::-webkit-slider-thumb {
+        position: relative;
+        -webkit-appearance:none;
+        height: 20px;
+        width: 20px;
+        border-radius: 50%;
+        background: rgba(255,255,255,0.4);
+        cursor:pointer;
+        z-index: 3;
+      }
+
+  /* 4.0---------- Botones -------------*/
+  /* 4.1---------- Play Pausa -------------*/
+  #playPause {
+    position:relative;
+    border: none;
+    text-decoration:none;
+    width: 100px;
+    height: 100px;
+    background: none;
+    border-radius: 50px;
+  }
+
+  #playPause:focus {
+    outline: none;
+  }
+
+  #playPause:before, #playPause:after, #playPause:focus:before, #playPause:focus:after {
+    position: absolute;
+    content: " ";
+    z-index: 1000;
+  }
+
+  #playPause:before, #playPause:after {
+    height: 47px;
+    width: 19px;
+    left: 29px;
+    top: 28px;
+    display: block;
+    background: #31D9A6;
+  }
+
+  #playPause:after {
+   left: 54px;
+  }
+
+  #playPause:focus:before {
+    top: 28px;
+    left: 34px;
+    width: 0;
+    height: 0;
+    border-left: 47px solid #31D9A6;
+    border-right: 24px solid transparent;
+    border-bottom: 24px solid transparent;
+    border-top: 24px solid transparent;
+    display: block;
+    background: transparent;
+  }
+
+  #playPause:focus:after {
+   visibility:hidden;
+  }
+
+  /* 4.2---------- Atras alante -------------*/
+
+  .fwd, .bck{
+    width: 40px;
+    height: 40px;
+    text-decoration:none;
+    background-repeat: no-repeat;
+    border: none;
+    position: absolute;
+  }
+
+  .fwd{
+    background:  url(../img/fwd.svg);
+    margin: 60px;
+    margin-top: 36px;
+  }
+
+  .bck{
+    background:  url(../img/bck.svg);
+    margin-left: -95px;
+    margin-top: 33px;
+  }
+
+  .fwd, .bck:focus {
+    outline: none;
+  }
+
+  .rep{
+    width: 70%;
+    position: relative;
+  }
+  .botonera{
+    position: relative;
+    margin-top:10%;
+
+  }
+
+  #aleatorio, #enmudit, #aleatorio:focus{
+    outline: none;
+    border: none;
+    position: absolute;
+    background-color: transparent;
+    margin:auto;
+    margin-top: 38px;
+  }
+
+  #aleatorio{
+    margin-left: 10%;
+  }
+
+  #enmudit{
+    margin-left: -20%;
+  }
+
+  #imgAleatorio {
+    width: 30px;
+    height: 30px;
+  }
+
+  #imgSilenciar{
+    width: 30px;
+    height: 30px;
+  }
+
+  footer {
+    width: 10%;
+    height: 100%;
+    background-color:  #31D9A6;
+    position: relative;
+    display: block;
+    padding: 2%;
+    padding-top: 9%;
+    top:-70%;
+    margin:0;
+
+  }
+
+
+
+  /* 3.1 footer */
+
+  .home, .lupa, .library{
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    border:none;
+    display: inline-block;
+    width: 7vh;
+    height: 7vh;
+    margin-top: 60%;
+
+  }
+
+
+  .home{
+    background-image: url(../img/homeBlack.svg);
+
+  }
+
+  .lupa{
+    background-image: url(../img/lupaBlack.svg);
+
+  }
+
+  .library{
+    background-image: url(../img/libraryBlack.svg);
+
+  }
+
+  .homeNight{
+    background-image: url(../img/homeWhite.svg);
+
+  }
+
+  .lupaNight{
+    background-image: url(../img/lupaWhite.svg);
+
+  }
+
+  .libraryNight{
+    background-image: url(../img/libraryWhite.svg);
+
+  }
+
+
+
+  }
+
+}
