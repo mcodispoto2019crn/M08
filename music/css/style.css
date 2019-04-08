@@ -1,4 +1,4 @@
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 640px) {
 
 *{
   padding: 0;
@@ -76,10 +76,9 @@ body::-webkit-scrollbar {
 	background: var(--bgBlack);
 	transition: .5s;
   position: relative;
-  z-index: 100!Important;
-
-
+  z-index: 100;
 }
+
 .day{
 	width: 100%;
 	height: 100vh;
@@ -117,7 +116,7 @@ body::-webkit-scrollbar {
 }
 
 .barra{
-  height: 50px;
+  height:8%;
   width: 100%;
   background-color: #31D9A6;
   z-index:50;
@@ -171,11 +170,11 @@ body::-webkit-scrollbar {
 
 .ultimo h2{
   text-align: center;
-  margin-top: 20px;
+  margin-top: 2vh;
 }
 .ultimo h5{
   text-align: center;
-  margin: 15px 0;
+  margin: 2vh 0;
 
 }
 
@@ -185,10 +184,10 @@ body::-webkit-scrollbar {
   overflow-x: scroll;
   overflow-y: hidden;
   display: grid;
-  grid-gap: 10px;
+  grid-gap: 20%;
   grid-template-columns: repeat(30, calc(50% - 80px));
   grid-template-rows: minmax(150px, 1fr);
-  height: 210px;
+  height: 130%;
 
 }
 
@@ -199,8 +198,8 @@ body::-webkit-scrollbar {
   line-height: 2 20px;
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
   transition: all 0.3s cubic-bezier(.25,.8,.25,1);
-  width: 120px;
-  height: 120px;
+  width: 150%;
+  height: 59%;
   position: relative;
 
 }
@@ -250,11 +249,11 @@ a:active {
 
 footer {
   width: 100%;
-  height: 100px;
-  bottom: 1px;
+  height: 15%;
+  bottom: -1vh;
   background-color:  #31D9A6;
   position:fixed;
-  box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 100px 100px rgba(0,0,0,0.22);
+
 }
 #footerFalse {
   width: 100%;
@@ -272,10 +271,10 @@ footer {
   position: relative;
   border:none;
   display: inline-block;
-  width: 50px;
-  height: 45px;
-  padding: 0 60px;
-  margin-top: 25px;
+  width: 7vh;
+  height: 7vh;
+  padding: 0 10%;
+  margin-top: 7%;
 
 }
 

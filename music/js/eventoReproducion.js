@@ -86,7 +86,7 @@ function iniciaRepro(){
   reproducir = document.getElementById('reproducir');
   playpause = document.getElementById('playPause');
   barra = document.getElementById('controlador');
-	enmudir = document.getElementById('enmudit');
+	enmudir = document.getElementById('imgSilenciar');
 
   enmudir.addEventListener("click", enmudeix, false);
 	playpause.addEventListener("click", playPause, false);
@@ -114,11 +114,11 @@ function playPause() {
 function enmudeix() {
 	if(reproducir.muted){
 		reproducir.muted=false;
-		document.getElementById('enmudit').src='img/muted.svg';
+		document.getElementById('imgSilenciar').src='img/muted.svg';
 	}
 	else{
 		reproducir.muted=true;
-		document.getElementById('enmudit').src='img/nomuted.svg';
+		document.getElementById('imgSilenciar').src='img/nomuted.svg';
 	}
 }
 
