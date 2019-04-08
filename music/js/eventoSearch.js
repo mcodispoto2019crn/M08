@@ -7,6 +7,6 @@ window.onload = function(){
 		var home = document.querySelector('.home').classList.toggle("homeNight");
 		var lupa = document.querySelector('.lupa').classList.toggle("lupaNight");
 		var library = document.querySelector('.library').classList.toggle("libraryNight");
-	
+		var text= document.querySelector('.text').classList.toggle("textNight");
 	})
 }

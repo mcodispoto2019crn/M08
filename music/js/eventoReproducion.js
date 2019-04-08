@@ -1,5 +1,5 @@
 var autor;
-var reproducir, playpause, barra, silencio;
+var reproducir, playpause, barra, enmudir;
 var i;
 var aleatorio;
 var lastSong;
@@ -63,6 +63,10 @@ function initHtmlVariables(){
 		var border = document.querySelector('.border').classList.toggle("activeBorder");
 		var button = document.querySelector('.button').classList.toggle("active");
 		var day = document.querySelector('.day').classList.toggle("night");
+		var ajustes = document.querySelector('.ajustes').classList.toggle("ajustesNight");
+		var home = document.querySelector('.home').classList.toggle("homeNight");
+		var lupa = document.querySelector('.lupa').classList.toggle("lupaNight");
+		var library = document.querySelector('.library').classList.toggle("libraryNight");
 	});
 
 	document.getElementsByClassName('fwdmusic').addEventListener('click',fwdmusic);
@@ -72,8 +76,8 @@ function initHtmlVariables(){
 
 window.onload = function(){
 	initVariables();
-	initHtmlVariables();
 	iniciaRepro();
+	initHtmlVariables();
 }
 
 
@@ -82,10 +86,10 @@ function iniciaRepro(){
   reproducir = document.getElementById('reproducir');
   playpause = document.getElementById('playPause');
   barra = document.getElementById('controlador');
-	silencio = document.getElementById('sileciar').muted= "true";
+	enmudir = document.getElementById('enmudit');
 
-	silencio.addEventListener("click", silenciar, false);
-  playpause.addEventListener("click", playPause, false);
+  enmudir.addEventListener("click", enmudeix, false);
+	playpause.addEventListener("click", playPause, false);
   barra.addEventListener("change", posicionAudio, false);
   reproducir.addEventListener("timeupdate", actuaTiempo, false);
 }
@@ -106,16 +110,16 @@ function playPause() {
 }
 
 //muted
-function mutear() {
-	if(silecio.muted){
-    silencio.muted = "true";
-		document.getElementById('silenciar').src='img/muted.svg';
-  }
-  else{
-    silencio.muted = "false";
-		document.getElementById('silenciar').src='img/nomuted.svg';
-  }
 
+function enmudeix() {
+	if(reproducir.muted){
+		reproducir.muted=false;
+		document.getElementById('enmudit').src='img/muted.svg';
+	}
+	else{
+		reproducir.muted=true;
+		document.getElementById('enmudit').src='img/nomuted.svg';
+	}
 }
 
 //para pasar el tiempo de la cancion a la barra

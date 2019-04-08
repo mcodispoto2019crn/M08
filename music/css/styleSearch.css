@@ -17,7 +17,6 @@ body::-webkit-scrollbar {
 ::-webkit-scrollbar {
 
   border-radius: 8px;
-
 }
 
 /* Track */
@@ -162,90 +161,35 @@ body::-webkit-scrollbar {
   margin-right: 10px;
 }
 
-/* 2.0 Contenido ultimos exitos, suherencias, más escuchados  */
+/*  Buscador */
 
-.ultimo{
-  margin: 20px auto;
-  padding: 20px;
-}
-
-.ultimo h2{
-  text-align: center;
-  margin-top: 20px;
-}
-.ultimo h5{
-  text-align: center;
-  margin: 15px 0;
-
-}
-
-.ultimo ul{
-  list-style: none;
-  width: 95% auto;
-  overflow-x: scroll;
-  overflow-y: hidden;
-  display: grid;
-  grid-gap: 10px;
-  grid-template-columns: repeat(30, calc(50% - 80px));
-  grid-template-rows: minmax(150px, 1fr);
-  height: 210px;
-
-}
-
-.ultimo li{
-  float: left;
-  margin: 20px;
-  background: var(--bgWhite);
-  line-height: 2 20px;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
-  width: 120px;
-  height: 120px;
-  position: relative;
-
-}
+form{
+    margin:30px;
+    width: 90%;
+    height: 230px;
+  }
 
 
-.ultimo li:hover {
-  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-}
+  .text input {
+    resize: none;
+    width: 90%;
+    border: solid 0.5px grey;
+    border-radius: 30px;
+    padding: 12px;
+    overflow: hidden;
+    font-size: 12pt;
+    outline:none;
+    background: var(--bgBlack);
+  	color:var(--colorWhite);
+    text-align: center;
 
-/* 2.1 imgagenes ultimos exitos, sugerencias, mas escuchadas */
+  }
 
-.ultimo img{
+  .textNight input{
+  	background: var(--bgWhite);
+  	color:var(--colorBlack);
+  }
 
-  border:none;
-  width: 120px;
-  height: 120px;
-}
-
-
-a{
-  text-decoration: none;
-  text-align: center;
-}
-a:link {
-  color:  var(--colorBlack);
-}
-
-/* visited link */
-a:visited {
-  color:  var(--colorBlack);
-}
-
-/* mouse over link */
-a:hover {
-  color:  var(--colorBlack);
-}
-
-/* selected link */
-a:active {
-  color:  var(--colorBlack);
-}
-
-
-
-/* footer */
 /* 3.0 footer */
 
 footer {

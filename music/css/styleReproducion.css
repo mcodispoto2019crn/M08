@@ -121,8 +121,14 @@ body::-webkit-scrollbar {
 }
 
 .ajustes{
-  background-image: url(../img/ajustes.png);
+  background-image: url(../img/ajustesBlack.svg);
   float:right;
+  margin-right: 10px;
+}
+.ajustesNight{
+  background-image: url(../img/ajustesWhite.svg);
+  float:right;
+  margin-right: 10px;
 }
 
 /* 2.0 Contenido  */
@@ -138,7 +144,6 @@ body::-webkit-scrollbar {
   width: 300px;
   height: 120px;
   position: relative;
-
   top: 18%;
 }
 
@@ -280,7 +285,7 @@ body::-webkit-scrollbar {
   margin-top:40%;
 }
 
-#aleatorio, #sileciar, #aleatorio:focus{
+#aleatorio, #enmudit, #aleatorio:focus{
   outline: none;
   border: none;
   position: absolute;
@@ -290,11 +295,11 @@ body::-webkit-scrollbar {
 }
 
 #aleatorio{
-  margin-left: 14.8%;
+  margin-left: 15%;
 }
 
-#sileciar{
-  margin-left: -43%;
+#enmudit{
+  margin-left: -48%;
 }
 
 #imgAleatorio {
@@ -309,8 +314,64 @@ body::-webkit-scrollbar {
 
 footer {
   width: 100%;
-  height: 90px;
-  background-color:#31D9A6;
-  position: fixed;
+  height: 100px;
+  bottom: 1px;
+  background-color: #31D9A6;
+  position:fixed;
+  box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 100px 100px rgba(0,0,0,0.22);
+  margin-top: -10px;
+}
+#footerFalse {
+  width: 100%;
+  height: 100px;
+}
+
+
+/* 3.1 footer */
+
+.home, .lupa, .library{
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  border:none;
+  display: inline-block;
+  width: 50px;
+  height: 45px;
+  padding: 0 60px;
+  margin-top: 25px;
+
+}
+
+.home{
+  background-image: url(../img/homeBlack.svg);
+
+}
+
+.lupa{
+  background-image: url(../img/lupaBlack.svg);
+
+}
+
+.library{
+  background-image: url(../img/libraryBlack.svg);
+
+}
+
+.homeNight{
+  background-image: url(../img/homeWhite.svg);
+
+}
+
+.lupaNight{
+  background-image: url(../img/lupaWhite.svg);
+
+}
+
+.libraryNight{
+  background-image: url(../img/libraryWhite.svg);
+
+}
+
+
 
 }
