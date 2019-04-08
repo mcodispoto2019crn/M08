@@ -175,11 +175,10 @@ function bckmusic() {
         i = lastSong.index;
         lastSong = lastSong.lastIndex;
     } else {
-        if (i == 0) {
-            i = songz[autor].length - 1;
-        } else {
-            i--;
-        }
+		i--;
+		if (i == -1) {
+			i = songz[autor].length - 1;
+		} 
     }
 
     if (i < coverCanciones[autor].lenght)
