@@ -60,10 +60,6 @@ function initVariables() {
 }
 
 function initHtmlVariables() {
-    document.getElementById('cover').src = coverCanciones[autor][i];
-    document.getElementById('reproducir').src = songz[autor][i];
-    document.getElementById('cancion').innerHTML = tituloCanciones[autor][i];
-    document.getElementById('artista').innerHTML = autor;
 
     var toggleButton = document.querySelector('.toggleButton').addEventListener('click', function() {
         var border = document.querySelector('.border').classList.toggle("activeBorder");
@@ -74,7 +70,10 @@ function initHtmlVariables() {
         var lupa = document.querySelector('.lupa').classList.toggle("lupaNight");
         var library = document.querySelector('.library').classList.toggle("libraryNight");
     });
-
+    document.getElementById('cover').src = coverCanciones[autor][i];
+    document.getElementById('reproducir').src = songz[autor][i];
+    document.getElementById('cancion').innerHTML = tituloCanciones[autor][i];
+    document.getElementById('artista').innerHTML = autor;
     document.getElementsByClassName('fwdmusic').addEventListener('click', fwdmusic);
     document.getElementsByClassName('bckmusic').addEventListener('click', bckmusic);
 
@@ -178,7 +177,7 @@ function bckmusic() {
 		i--;
 		if (i == -1) {
 			i = songz[autor].length - 1;
-		} 
+		}
     }
 
     if (i < coverCanciones[autor].lenght)

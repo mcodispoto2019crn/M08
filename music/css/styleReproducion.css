@@ -66,7 +66,7 @@ body::-webkit-scrollbar {
 	background: var(--bgBlack);
 	border:2px solid var(--colorWhite);
 }
-.activado{
+.active{
 	background: var(--bgWhite);
 	transform: translateX(150%);
   z-index: 1000000;
@@ -444,7 +444,7 @@ footer {
   	background: var(--bgBlack);
   	border:2px solid var(--colorWhite);
   }
-  .activado{
+  .active{
   	background: var(--bgWhite);
   	transform: translateX(150%);
     z-index: 1000000;
@@ -510,6 +510,8 @@ footer {
   }
 
   /* 2.0 Contenido  */
+
+  
 
   #cover {
     width: 300px;
@@ -660,7 +662,7 @@ footer {
   }
   .botonera{
     position: relative;
-    margin-top:10%;
+    margin-top:140px;
 
   }
 
@@ -670,15 +672,15 @@ footer {
     position: absolute;
     background-color: transparent;
     margin:auto;
-    margin-top: 38px;
+    margin-top: 100px;
   }
 
   #aleatorio{
-    margin-left: 10%;
+    margin-left: 62px;
   }
 
   #enmudit{
-    margin-left: -20%;
+    margin-left: -190px;
   }
 
   #imgAleatorio {
@@ -693,7 +695,7 @@ footer {
 
   footer {
     width: 10%;
-    height: 100%;
+    height: 110%;
     background-color:  #31D9A6;
     position: relative;
     display: block;
@@ -714,9 +716,9 @@ footer {
     position: relative;
     border:none;
     display: inline-block;
-    width: 7vh;
-    height: 7vh;
-    margin-top: 60%;
+    width: 80%;
+    height: 30%;
+
 
   }
 

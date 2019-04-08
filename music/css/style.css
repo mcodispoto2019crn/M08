@@ -567,13 +567,14 @@ a:active {
 
 footer {
   width: 10%;
-  height: 100%;
+  height: 110%;
   background-color:  #31D9A6;
-  top:-90%;
   position: relative;
   display: block;
   padding: 2%;
   padding-top: 9%;
+  top:-110%;
+  margin:0;
 
 
 }
@@ -586,9 +587,8 @@ footer {
   position: relative;
   border:none;
   display: inline-block;
-  width: 7vh;
-  height: 7vh;
-  margin-top: 60%;
+  width: 80%;
+  height: 30%;
 
 }
 
