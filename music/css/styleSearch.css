@@ -41,7 +41,7 @@ body::-webkit-scrollbar {
 
 
 .contenedor{
-  margin:auto;
+  margin: 0 auto;
 }
 
 /* 0.0 Day and night */
@@ -161,19 +161,26 @@ body::-webkit-scrollbar {
 
 /*  Buscador */
 
-form{
-
-    width: 90%;
-    height: 230px;
-  }
+.ultimo{
+  width: 95%;
+    padding: 40px;
+}
 
 h2{
-  text-align: center;
+
+  padding-top:100px;
 }
+
+form{
+    margin:50px;
+
+  }
+
 
   .text input {
     resize: none;
-    width: 85%;
+    width: 90%;
+    height: 60px;
     border: solid 0.5px grey;
     border-radius: 30px;
     overflow: hidden;
@@ -300,7 +307,7 @@ body::-webkit-scrollbar {
 .contenedor{
   width: 100%;
   max-width: 600px;
-  margin:auto;
+  margin: 0 auto;
 }
 
 /* 0.0 Day and night */
@@ -420,19 +427,28 @@ body::-webkit-scrollbar {
 
 /*  Buscador */
 
+.ultimo{
+  width: 95%;
+    padding: 40px;
+}
+
+h2{
+  margin-left:-50px;
+  padding-top:100px;
+}
+
 form{
-    margin:30px;
-    width: 90%;
-    height: 230px;
+    margin:50px;
+
   }
 
 
   .text input {
     resize: none;
     width: 90%;
+    height: 60px;
     border: solid 0.5px grey;
     border-radius: 30px;
-    padding: 12px;
     overflow: hidden;
     font-size: 12pt;
     outline:none;
