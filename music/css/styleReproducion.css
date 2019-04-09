@@ -134,8 +134,8 @@ body::-webkit-scrollbar {
 /* 2.0 Contenido  */
 
 #cover {
-  width: 300px;
-  height: 300px;
+  width: 200px;
+  height: 200px;
   top:70px;
   position: relative;
 }
