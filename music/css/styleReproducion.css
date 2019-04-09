@@ -133,6 +133,11 @@ body::-webkit-scrollbar {
 
 /* 2.0 Contenido  */
 
+.contenedor{
+  width: 90%;
+  position: relative;
+}
+
 #cover {
   width: 200px;
   height: 200px;
@@ -145,6 +150,7 @@ body::-webkit-scrollbar {
   height: 120px;
   position: relative;
   top: 20px;
+  background: red;
 }
 
 
