@@ -149,8 +149,8 @@ body::-webkit-scrollbar {
   width: 300px;
   height: 120px;
   position: relative;
-  top: 20px;
-  background: red;
+  top: 70px;
+
 }
 
 
@@ -285,10 +285,11 @@ body::-webkit-scrollbar {
 .rep{
   width: 80%;
   position: relative;
+  top:60px;
 }
 .botonera{
   position: relative;
-  margin-top:40%;
+
 }
 
 #aleatorio, #enmudit, #aleatorio:focus{
@@ -311,11 +312,14 @@ body::-webkit-scrollbar {
 #imgAleatorio {
   width: 30px;
   height: 30px;
+  margin-top: 40px;
+  margin-left: -48%;
 }
 
 #imgSilenciar{
   width: 30px;
   height: 30px;
+  margin-top: 40px;
 }
 
 /* 3.0 footer */
