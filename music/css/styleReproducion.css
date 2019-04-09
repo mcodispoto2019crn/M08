@@ -51,7 +51,7 @@ body::-webkit-scrollbar {
 }
 .day{
 	width: 100%;
-	height: 100vh;
+  height: 8000px;
 	box-sizing: border-box;
 	background: var(--bgWhite);
 	color: var(--colorBlack);
@@ -285,7 +285,7 @@ body::-webkit-scrollbar {
 .rep{
   width: 80%;
   position: relative;
-  top:60px;
+  top:45px;
 }
 .botonera{
   position: relative;
@@ -302,24 +302,25 @@ body::-webkit-scrollbar {
 }
 
 #aleatorio{
-  margin-left: 15%;
+  margin-left: 60px;
 }
 
 #enmudit{
-  margin-left: -48%;
+  margin-left: -185px;
 }
 
 #imgAleatorio {
   width: 30px;
   height: 30px;
   margin-top: 40px;
-  margin-left: -48%;
+
 }
 
 #imgSilenciar{
   width: 30px;
   height: 30px;
   margin-top: 40px;
+
 }
 
 /* 3.0 footer */
@@ -333,7 +334,7 @@ footer {
 }
 #footerFalse {
   width: 100%;
-  height: 100px;
+  height: 15%;
 }
 
 
@@ -396,6 +397,7 @@ footer {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     text-align: center;
+    
   }
 
   body::-webkit-scrollbar {
@@ -439,7 +441,7 @@ footer {
   }
   .day{
   	width: 100%;
-  	height: 100vh;
+    height: 800px;
   	box-sizing: border-box;
   	background: var(--bgWhite);
   	color: var(--colorBlack);
