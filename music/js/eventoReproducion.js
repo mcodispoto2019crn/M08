@@ -154,14 +154,13 @@ function fwdmusic() {
         if (i == songz[autor].length) {
             i = 0;
         }
-    }
+      }
 
     if (i < coverCanciones[autor].lenght) {
         imgCover = i;
     } else {
         imgCover = 0;
     }
-
 
     document.getElementById('reproducir').src = songz[autor][i];
     document.getElementById('cancion').innerHTML = tituloCanciones[autor][i];
