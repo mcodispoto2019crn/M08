@@ -51,7 +51,7 @@ body::-webkit-scrollbar {
 }
 .day{
 	width: 100%;
-  height: 8000px;
+  height: 1000px;
 	box-sizing: border-box;
 	background: var(--bgWhite);
 	color: var(--colorBlack);
@@ -292,7 +292,8 @@ body::-webkit-scrollbar {
 
 }
 
-#aleatorio, #enmudit, #aleatorio:focus{
+
+#aleatorio, #enmudit {
   outline: none;
   border: none;
   position: absolute;
@@ -397,7 +398,7 @@ footer {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     text-align: center;
-    
+
   }
 
   body::-webkit-scrollbar {
@@ -441,7 +442,7 @@ footer {
   }
   .day{
   	width: 100%;
-    height: 800px;
+    height: 1000px;
   	box-sizing: border-box;
   	background: var(--bgWhite);
   	color: var(--colorBlack);
@@ -693,7 +694,7 @@ footer {
   }
 
   #aleatorio{
-    left:610px;
+    left:780px;
   }
 
   #enmudit{
@@ -717,7 +718,7 @@ footer {
     position: relative;
     display: block;
     padding: 2%;
-    padding-top: 9%;
+    padding-top: 15%;
     top:-90%;
     margin:0;
 
