@@ -1,0 +1,9 @@
+index.html
+img/*
+audio/nicolasJaar/*
+audio/locoPlaya/*
+audio/kaseO/*
+audio/chilliHotPepper/*
+audio/badBunny/*
+css/*
+js/*
