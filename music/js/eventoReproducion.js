@@ -118,10 +118,10 @@ function playPause() {
 function enmudeix() {
     if (reproducir.muted) {
         reproducir.muted = false;
-        document.getElementById('imgSilenciar').src = 'img/muted.svg';
+        document.getElementById('imgSilenciar').src = 'img/nomuted.svg';
     } else {
         reproducir.muted = true;
-        document.getElementById('imgSilenciar').src = 'img/nomuted.svg';
+        document.getElementById('imgSilenciar').src = 'img/muted.svg';
     }
 }
 
@@ -154,14 +154,13 @@ function fwdmusic() {
         if (i == songz[autor].length) {
             i = 0;
         }
-    }
+      }
 
     if (i < coverCanciones[autor].lenght) {
         imgCover = i;
     } else {
         imgCover = 0;
     }
-
 
     document.getElementById('reproducir').src = songz[autor][i];
     document.getElementById('cancion').innerHTML = tituloCanciones[autor][i];
