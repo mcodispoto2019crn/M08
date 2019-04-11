@@ -1,18 +1,13 @@
 
-var reproducir, playpause, barra;
+var reproducir, playpause;
 var i;
-var autorCanciones, coverCanciones, songz;
+
 
 
 
 function initVariables() {
     i = 0;
 
-    var coverCanciones = [""];
-
-    var autorCanciones = ["Say My Name - David Guetta" , "The road - Flying Decibels" , "Feel like this - Soulkids" , "By the river - Klingande" , " This Girl - Kungs vs Cookin" , " Feel It Still - The Man" , " Later Bitches - The Prince Karma"];
-
-    var songz = ["audio/David Guetta, Bebe Rexha & J Balvin - Say My Name (Official Video).mp3" , "audio/Flying Decibels - The Road (Official Video).mp3" , "audio/Jordi Véliz y Soulkids - Feel Like This.mp3" , "audio/Klingande - By The River (feat. Jamie N Commons).mp3","audio/Kungs vs Cookin' On 3 Burners - This Girl [Original Mix].mp3" , "audio/Portugal. The Man - Feel It Still (Official Video).mp3" , "audio/The Prince Karma - Later Bitches [Ultra Music].mp3"];
 }
 
 function initHtmlVariables() {
@@ -26,10 +21,6 @@ function initHtmlVariables() {
         var lupa = document.querySelector('.lupa').classList.toggle("lupaNight");
         var library = document.querySelector('.library').classList.toggle("libraryNight");
     });
-    document.getElementById('cover01').src = coverCanciones[i];
-    document.getElementById('artista').innerHTML = autorCanciones[i];
-    document.getElementById('reproducir').src = songz[i];
-
 
 }
 
@@ -42,8 +33,8 @@ window.onload = function() {
 
 
 function iniciaRepro() {
-    reproducir = document.getElementById('reproducir');
-    playpause = document.getElementById('playPause');
+    reproducir = document.getElementsByClassName('reproducir');
+    playpause = document.getElementsByClassName('playPause');
 }
 
 

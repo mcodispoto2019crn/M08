@@ -148,7 +148,7 @@ h5{
 
 /* 4.0---------- Botones -------------*/
 /* 4.1---------- Play Pausa -------------*/
-#playPause {
+.playPause {
   position:relative;
   border: none;
   text-decoration:none;
@@ -158,17 +158,17 @@ h5{
   border-radius: 50px;
 }
 
-#playPause:focus {
+.playPause:focus {
   outline: none;
 }
 
-#playPause:before, #playPause:after, #playPause:focus:before, #playPause:focus:after {
+.playPause:before, .playPause:after, .playPause:focus:before, .playPause:focus:after {
   position: absolute;
   content: " ";
   z-index: 1000;
 }
 
-#playPause:before, #playPause:after {
+.playPause:before, .playPause:after {
   height: 47px;
   width: 19px;
   left: 29px;
@@ -177,11 +177,11 @@ h5{
   background: #31D9A6;
 }
 
-#playPause:after {
+.playPause:after {
  left: 54px;
 }
 
-#playPause:focus:before {
+.playPause:focus:before {
   top: 28px;
   left: 34px;
   width: 0;
@@ -194,7 +194,7 @@ h5{
   background: transparent;
 }
 
-#playPause:focus:after {
+.playPause:focus:after {
  visibility:hidden;
 }
 
@@ -325,7 +325,7 @@ footer {
   	background: var(--bgWhite);
   	color: var(--colorBlack);
   	transition: 1s;
-  	text-align: center;
+
     text-decoration: none;
   }
 
@@ -409,61 +409,73 @@ footer {
   }
 
   h5{
-    font-size: 24pt;
+    font-size: 22pt;
     text-transform: uppercase;
-    text-align: center;
 
+
+  }
+
+  h2{
+    font-size: 12pt;
+
+  }
+
+  .contenidoCancion{
+    width: 80%;
+    height:5%;
+    border-bottom: solid 0.5px #31D9A6;
+    float: left;
+  }
+
+  .cover, .artista{
+    clear: left;
   }
 
   /* 4.0---------- Botones -------------*/
   /* 4.1---------- Play Pausa -------------*/
-  #playPause {
+  .playPause {
     position:relative;
     border: none;
+    width: 20px;
+    height: 20px;
     text-decoration:none;
-    width: 100px;
-    height: 100px;
     background: none;
     border-radius: 50px;
   }
 
-  #playPause:focus {
+  .playPause:focus {
     outline: none;
   }
 
-  #playPause:before, #playPause:after, #playPause:focus:before, #playPause:focus:after {
+  .playPause:before, .playPause:after, .playPause:focus:before, .playPause:focus:after {
     position: absolute;
     content: " ";
     z-index: 1000;
   }
 
-  #playPause:before, #playPause:after {
-    height: 47px;
-    width: 19px;
-    left: 29px;
-    top: 28px;
-    display: block;
+  .playPause:before, .playPause:after {
+    height: 27px;
+    width: 9px;
+    left: 40px;
+    top: 7px;
     background: #31D9A6;
   }
 
-  #playPause:after {
+  .playPause:after {
    left: 54px;
   }
 
-  #playPause:focus:before {
-    top: 28px;
-    left: 34px;
+  .playPause:focus:before {
     width: 0;
     height: 0;
-    border-left: 47px solid #31D9A6;
-    border-right: 24px solid transparent;
-    border-bottom: 24px solid transparent;
-    border-top: 24px solid transparent;
-    display: block;
+    border-left: 27px solid #31D9A6;
+    border-right: 14px solid transparent;
+    border-bottom: 14px solid transparent;
+    border-top: 14px solid transparent;
     background: transparent;
   }
 
-  #playPause:focus:after {
+  .playPause:focus:after {
    visibility:hidden;
   }
 
