@@ -681,20 +681,18 @@ footer {
   .botonera{
     position: relative;
     margin-top:60px;
-
   }
 
-  #aleatorio, #enmudit, #aleatorio:focus{
+  #aleatorio, #enmudit{
     outline: none;
     border: none;
     position: absolute;
     background-color: transparent;
-    margin:auto;
     margin-top: 100px;
   }
 
   #aleatorio{
-    left:780px;
+    margin-left: 65px;
   }
 
   #enmudit{

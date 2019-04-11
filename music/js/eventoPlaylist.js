@@ -25,8 +25,8 @@ function initHtmlVariables() {
 }
 
 window.onload = function() {
-    initVariables();
     iniciaRepro();
+    initVariables();
     initHtmlVariables();
 }
 
