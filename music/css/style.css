@@ -90,6 +90,10 @@ body::-webkit-scrollbar {
   text-decoration: none;
 }
 
+.textoEnlazado{
+
+}
+
 /* 0.1 Movimiento */
 
 .activeBorder{
@@ -104,6 +108,35 @@ body::-webkit-scrollbar {
 .night{
 	background: var(--bgBlack);
 	color:var(--colorWhite);
+
+}
+.nightText{
+  background: transparent;
+	color:var(--colorWhite);
+
+}
+
+a{
+  text-decoration: none;
+  text-align: center;
+}
+a:link {
+  color:  var(--colorBlack);
+}
+
+/* visited link */
+a:visited {
+  color:  var(--colorBlack);
+}
+
+/* mouse over link */
+a:hover {
+  color:  var(--colorBlack);
+}
+
+/* selected link */
+a:active {
+  color:  var(--colorBlack);
 }
 
 
@@ -532,7 +565,11 @@ body::-webkit-scrollbar {
   width: 120px;
   height: 120px;
 }
+.nightText{
+  background: transparent;
+	color:var(--colorWhite);
 
+}
 
 a{
   text-decoration: none;

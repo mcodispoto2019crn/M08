@@ -179,7 +179,7 @@ function bckmusic() {
 		}
     }
 
-    if (i < coverCanciones[autor].lenght)
+    if (i < coverCanciones[autor].length)
         imgCover = i;
     else
         imgCover = 0;

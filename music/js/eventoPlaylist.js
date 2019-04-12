@@ -1,9 +1,5 @@
 
-var reproducir, playpause;
 var i;
-
-
-
 
 function initVariables() {
     i = 0;
@@ -25,23 +21,15 @@ function initHtmlVariables() {
 }
 
 window.onload = function() {
-    iniciaRepro();
     initVariables();
     initHtmlVariables();
 }
 
 
-
-function iniciaRepro() {
-    reproducir = document.getElementsByClassName('reproducir');
-    playpause = document.getElementsByClassName('playPause');
-}
-
-
-
 //para play y pausa,
 
-function playPause() {
+function playPause(playpause) {
+  reproducir = playpause.parentElement.getElementsByClassName("reproducir")[0];
     if (reproducir.paused) {
         reproducir.play();
         playpause.blur();
